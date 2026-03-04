@@ -1,5 +1,11 @@
-import { useRef, useEffect } from 'react';
+import { useState } from 'react';
 import styles from './DoctorsTestimonials.module.css';
+import { ShimmerCard } from './Shimmer';
+
+// Helper to add Cloudinary transformations to URL
+const getOptimizedUrl = (url) => {
+  return url.replace('/upload/', '/upload/f_auto,q_auto,w_800/');
+};
 
 const TESTIMONIAL_IMAGES = [
   "https://res.cloudinary.com/debvroycl/image/upload/v1772440000/WhatsApp_Image_2026-02-20_at_11.44.08_PM_md1mrh.jpg",
@@ -37,7 +43,29 @@ const TESTIMONIAL_IMAGES = [
   "https://res.cloudinary.com/debvroycl/image/upload/v1772439935/WhatsApp_Image_2025-11-28_at_8.08.26_PM_yml57x.jpg",
   "https://res.cloudinary.com/debvroycl/image/upload/v1772439934/WhatsApp_Image_2025-11-05_at_6.11.07_PM_mq9rdu.jpg",
   "https://res.cloudinary.com/debvroycl/image/upload/v1772439934/Ayurnath_Reel_Doctor_1_ex19as.jpg"
-];
+].map(getOptimizedUrl);
+
+// Image Card with Shimmer loading effect
+function ImageCard({ src, index }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <div className={styles.imageCard}>
+      <div className={styles.imageGlow}></div>
+      <div className={styles.imageFrame}>
+        {!isLoaded && <ShimmerCard className={styles.shimmerOverlay} />}
+        <img 
+          src={src} 
+          alt={`Testimonial ${index + 1}`}
+          className={`${styles.image} ${isLoaded ? styles.imageLoaded : styles.imageLoading}`}
+          loading="lazy"
+          onLoad={() => setIsLoaded(true)}
+        />
+      </div>
+      <div className={styles.imageShadow}></div>
+    </div>
+  );
+}
 
 export default function DoctorsTestimonials({ title, label }) {
   // Split images into 3 columns for alternating scroll
@@ -66,18 +94,7 @@ export default function DoctorsTestimonials({ title, label }) {
           <div className={styles.column}>
             <div className={`${styles.track} ${styles.trackDown}`}>
               {tripledCol1.map((src, i) => (
-                <div key={`col1-${i}`} className={styles.imageCard}>
-                  <div className={styles.imageGlow}></div>
-                  <div className={styles.imageFrame}>
-                    <img 
-                      src={src} 
-                      alt={`Testimonial ${i + 1}`}
-                      className={styles.image}
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className={styles.imageShadow}></div>
-                </div>
+                <ImageCard key={`col1-${i}`} src={src} index={i} />
               ))}
             </div>
           </div>
@@ -86,18 +103,7 @@ export default function DoctorsTestimonials({ title, label }) {
           <div className={styles.column}>
             <div className={`${styles.track} ${styles.trackUp}`}>
               {tripledCol2.map((src, i) => (
-                <div key={`col2-${i}`} className={styles.imageCard}>
-                  <div className={styles.imageGlow}></div>
-                  <div className={styles.imageFrame}>
-                    <img 
-                      src={src} 
-                      alt={`Testimonial ${i + 1}`}
-                      className={styles.image}
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className={styles.imageShadow}></div>
-                </div>
+                <ImageCard key={`col2-${i}`} src={src} index={i} />
               ))}
             </div>
           </div>
@@ -106,18 +112,7 @@ export default function DoctorsTestimonials({ title, label }) {
           <div className={styles.column}>
             <div className={`${styles.track} ${styles.trackDown}`}>
               {tripledCol3.map((src, i) => (
-                <div key={`col3-${i}`} className={styles.imageCard}>
-                  <div className={styles.imageGlow}></div>
-                  <div className={styles.imageFrame}>
-                    <img 
-                      src={src} 
-                      alt={`Testimonial ${i + 1}`}
-                      className={styles.image}
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className={styles.imageShadow}></div>
-                </div>
+                <ImageCard key={`col3-${i}`} src={src} index={i} />
               ))}
             </div>
           </div>

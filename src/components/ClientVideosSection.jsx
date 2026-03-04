@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import styles from './ClientVideosSection.module.css';
+import { ShimmerCard } from './Shimmer';
 
 // Client videos from Cloudinary
 const CLIENT_VIDEOS = [
@@ -111,12 +112,17 @@ function VideoModal({ video, onClose }) {
 
 function VideoCard({ video, onClick }) {
   const videoRef = useRef(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch((err) => console.log('Autoplay issue:', err));
     }
   }, []);
+
+  const handleLoadedData = () => {
+    setIsLoaded(true);
+  };
 
   return (
     <div
@@ -126,15 +132,17 @@ function VideoCard({ video, onClick }) {
       <div className={styles.cardGlow}></div>
       <div className={styles.cardInner}>
         <div className={styles.videoWrapper}>
+          {!isLoaded && <ShimmerCard className={styles.videoShimmer} />}
           <video
             ref={videoRef}
             src={video.src}
-            className={styles.video}
+            className={`${styles.video} ${isLoaded ? styles.videoLoaded : styles.videoLoading}`}
             autoPlay
             muted
             loop
             playsInline
             preload="metadata"
+            onLoadedData={handleLoadedData}
           />
           <div className={styles.videoOverlay}>
             <div className={styles.playIcon}>
@@ -207,6 +215,29 @@ export default function ClientVideosSection({ title, label }) {
     pausedRef.current = false;
   };
 
+  const scrollLeft = () => {
+    const track = trackRef.current;
+    if (track) {
+      posRef.current -= 350;
+      if (posRef.current < 0) {
+        posRef.current = track.scrollWidth / 3 - 350;
+      }
+      track.style.transform = `translateX(-${posRef.current}px)`;
+    }
+  };
+
+  const scrollRight = () => {
+    const track = trackRef.current;
+    if (track) {
+      posRef.current += 350;
+      const oneThird = track.scrollWidth / 3;
+      if (posRef.current >= oneThird) {
+        posRef.current = 0;
+      }
+      track.style.transform = `translateX(-${posRef.current}px)`;
+    }
+  };
+
   return (
     <section className={styles.section}>
       <div className={styles.header}>
@@ -224,6 +255,26 @@ export default function ClientVideosSection({ title, label }) {
       >
         <div className={styles.fadeLeft}></div>
         <div className={styles.fadeRight}></div>
+        
+        {/* Navigation Arrows */}
+        <button 
+          className={`${styles.navArrow} ${styles.navArrowLeft}`}
+          onClick={scrollLeft}
+          aria-label="Scroll left"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button 
+          className={`${styles.navArrow} ${styles.navArrowRight}`}
+          onClick={scrollRight}
+          aria-label="Scroll right"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
         
         <div className={styles.track} ref={trackRef}>
           {tripled.map((video, i) => (

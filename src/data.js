@@ -10,7 +10,7 @@ export const siteData = {
       address: "Charubala Apartment, Thakurpukur, Kolkata, West Bengal 700063",
       response_time: "Under 2 hours",
       social: {
-        instagram: "https://instagram.com/visualeditstudio",
+        instagram: "https://www.instagram.com/ves_brand_",
         facebook: "https://facebook.com/visualeditstudio",
         linkedin: "https://linkedin.com/company/visualeditstudio",
         twitter: "https://twitter.com/visualeditstudio",
