@@ -1,0 +1,171 @@
+.hero {}
+
+.heroGlow {
+  background: radial-gradient(ellipse, rgba(0, 180, 216, 0.15) 0%, transparent 65%) !important;
+  left: -200px !important;
+  right: auto !important;
+}
+
+/* Results Strip - Modern Cards */
+.results {
+  padding: 5rem 0;
+  background: transparent;
+  position: relative;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .resultsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .resultsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Case Studies */
+.caseGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .caseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .caseGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.caseCard {
+  border: 1px solid rgba(0, 136, 170, 0.12);
+  border-radius: 12px;
+  padding: 2rem;
+  background: var(--card);
+  transition: all 0.3s;
+}
+
+.caseCard:hover {
+  border-color: rgba(0, 180, 216, 0.35);
+  transform: translateY(-4px);
+}
+
+.caseTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.caseTag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.caseResult {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--teal-bright);
+  letter-spacing: 0.03em;
+}
+
+/* Case Studies */
+.caseGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.caseCard {
+  border: 1px solid rgba(0, 136, 170, 0.12);
+  border-radius: 4px;
+  padding: 2rem;
+  background: var(--card);
+  transition: all 0.3s;
+}
+
+.caseCard:hover {
+  border-color: rgba(0, 180, 216, 0.35);
+  transform: translateY(-4px);
+}
+
+.caseTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.caseTag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.caseResult {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--teal-bright);
+  letter-spacing: 0.03em;
+}
+
+.caseClient {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.caseDetail {
+  font-size: 0.82rem;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.caseBar {
+  height: 2px;
+  background: var(--gray-dim);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.caseBarFill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, var(--teal-dim), var(--teal-bright));
+  transition: width 0.8s ease;
+}
+
+.caseCard:hover .caseBarFill { width: 100%; }
+
+@media (max-width: 900px) {
+  .resultsGrid { grid-template-columns: repeat(3, 1fr); }
+  .caseGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .resultsGrid { grid-template-columns: repeat(2, 1fr); }
+}

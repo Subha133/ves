@@ -1,0 +1,108 @@
+@keyframes wa-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+    }
+
+    70% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.waFab {
+    position: fixed;
+    bottom: 28px;
+    right: 24px;
+    z-index: 9999;
+    width: 58px;
+    height: 58px;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    animation: wa-pulse 2s infinite;
+    transition: transform 0.2s;
+}
+
+.waFab:hover {
+    transform: scale(1.1);
+}
+
+.waFab svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+/* Social Bar */
+.socialBar {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50px;
+    padding: 10px 22px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.22s cubic-bezier(.34, 1.56, .64, 1), box-shadow 0.22s;
+    text-decoration: none;
+}
+
+.socialLink:hover {
+    transform: translateY(-5px) scale(1.18);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+.socialLink svg {
+    width: 22px;
+    height: 22px;
+}
+
+.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.fb {
+    background: #1877f2;
+}
+
+.li {
+    background: #0a66c2;
+}
+
+.tw {
+    background: #000;
+}
+
+@media (max-width: 600px) {
+    .socialBar {
+        padding: 8px 16px;
+        gap: 10px;
+    }
+
+    .socialLink {
+        width: 34px;
+        height: 34px;
+    }
+}

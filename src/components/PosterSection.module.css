@@ -1,0 +1,242 @@
+.section {
+    padding: 6rem 0;
+    background: var(--bg-dark, #0a0a0a);
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sectionInner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+}
+
+.sectionLabel {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--teal-bright, #0ea5e9);
+    margin-bottom: 0.75rem;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background: rgba(14, 165, 233, 0.05);
+}
+
+.sectionTitle {
+    font-family: var(--font-display, sans-serif);
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    letter-spacing: 0.05em;
+    color: var(--teal, #38bdf8);
+    line-height: 1.05;
+}
+
+/* 3D Horizontal Carousel */
+.carousel3D {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    perspective: 1200px;
+    overflow: hidden;
+}
+
+.carouselTrack3D {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    animation: scrollHorizontal 25s linear infinite;
+    transform-style: preserve-3d;
+}
+
+.carousel3D:hover .carouselTrack3D {
+    animation-play-state: paused;
+}
+
+@keyframes scrollHorizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-33.33%);
+    }
+}
+
+.carouselItem {
+    position: relative;
+    flex-shrink: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.carouselItem:nth-child(odd) {
+    transform: translateZ(20px) rotateY(-3deg);
+}
+
+.carouselItem:nth-child(even) {
+    transform: translateZ(-10px) rotateY(3deg);
+}
+
+.carouselItem:hover {
+    transform: translateZ(60px) rotateY(0deg) scale(1.1);
+    z-index: 10;
+}
+
+.imageCard {
+    position: relative;
+    width: 260px;
+    height: 340px;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.imageFrame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.carouselItem:hover .imageFrame {
+    border-color: rgba(14, 165, 233, 0.4);
+    box-shadow: 
+        0 35px 70px -15px rgba(0, 0, 0, 0.7),
+        0 0 40px rgba(14, 165, 233, 0.25),
+        0 0 0 1px rgba(14, 165, 233, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.imageGlow {
+    position: absolute;
+    inset: -30px;
+    background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.3) 0%, transparent 70%);
+    border-radius: 50px;
+    filter: blur(40px);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.carouselItem:hover .imageGlow {
+    opacity: 1;
+}
+
+.imageShadow {
+    position: absolute;
+    bottom: -20px;
+    left: 10%;
+    right: 10%;
+    height: 40px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, transparent 70%);
+    filter: blur(20px);
+    border-radius: 50%;
+    z-index: -2;
+    transition: all 0.5s ease;
+}
+
+.carouselItem:hover .imageShadow {
+    bottom: -30px;
+    left: 5%;
+    right: 5%;
+    height: 50px;
+    background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.3) 0%, transparent 70%);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.carouselItem:hover .image {
+    transform: scale(1.08);
+}
+
+/* Edge fade masks */
+.carousel3D::before,
+.carousel3D::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.carousel3D::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-dark, #0a0a0a) 0%, transparent 100%);
+}
+
+.carousel3D::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-dark, #0a0a0a) 0%, transparent 100%);
+}
+
+@media (max-width: 1024px) {
+    .carousel3D {
+        height: 350px;
+    }
+    
+    .imageCard {
+        width: 220px;
+        height: 290px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .header {
+        margin-bottom: 3rem;
+    }
+
+    .carousel3D {
+        height: 300px;
+    }
+    
+    .imageCard {
+        width: 180px;
+        height: 240px;
+    }
+    
+    .carousel3D::before,
+    .carousel3D::after {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel3D {
+        height: 260px;
+    }
+    
+    .imageCard {
+        width: 150px;
+        height: 200px;
+    }
+}

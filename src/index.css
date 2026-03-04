@@ -1,0 +1,272 @@
+:root {
+  /* Core Colors */
+  --black: #f2efda;
+  /* The cream background */
+  --white: #000000;
+  /* The new text base (pure black per user request) */
+  --dark: #f8f6ea;
+  --card: #ffffff;
+
+  /* Accents - #0077dd as primary heading/brand blue (improved contrast) */
+  --teal: #0077dd;
+  /* Primary heading & brand blue */
+  --teal-bright: #33aaff;
+  /* Lighter blue for hovers & highlights */
+  --teal-dim: #0055bb;
+  /* Deeper blue for active states & shadows */
+  --silver: #475569;
+
+  --gray: #334155;
+  /* Darkened for readability against cream */
+  --gray-dim: #94a3b8;
+
+  /* Glassmorphism Tokens - Light frosted */
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-bg-hover: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 136, 255, 0.08);
+  /* Subtle blue tint to borders */
+  --glass-border-highlight: rgba(0, 136, 255, 0.2);
+  /* Blue highlight on focus/hover */
+  --glass-blur: 24px;
+  --glass-shadow: 0 8px 32px 0 rgba(0, 136, 255, 0.07);
+
+  /* Gradients */
+  --text-gradient: linear-gradient(135deg, #0088ff 0%, #0062cc 100%);
+  /* Heading gradient */
+  --brand-gradient: linear-gradient(135deg, #0088ff 0%, #33aaff 100%);
+  /* Brand accent gradient */
+
+  /* Typography */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black);
+  /* #f2efda cream */
+  color: var(--white);
+  /* #000000 pure black */
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Animated Aurora Background attached to body */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.7;
+  will-change: transform;
+}
+
+body::before {
+  /* Warm ivory flows with a hint of blue atmosphere */
+  background: radial-gradient(circle at 15% 50%, rgba(245, 203, 167, 0.4), transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.6), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(0, 136, 255, 0.05), transparent 50%);
+  animation: auroraFlow 25s ease-in-out infinite alternate;
+}
+
+body::after {
+  /* Subtle blue-tinted cool flow to complement brand color */
+  background: radial-gradient(circle at 50% 80%, rgba(0, 136, 255, 0.06), transparent 60%),
+    radial-gradient(circle at 20% 20%, rgba(184, 230, 239, 0.25), transparent 60%);
+  animation: auroraFlow2 20s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes auroraFlow {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  100% {
+    transform: scale(1.1) translate(3%, 3%);
+  }
+}
+
+@keyframes auroraFlow2 {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  100% {
+    transform: scale(1.05) translate(-3%, -3%);
+  }
+}
+
+/* ─── Heading Styles ─────────────────────────────────────── */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  color: #0088ff;
+  /* Solid #0088ff on cream — high contrast */
+  letter-spacing: 0.01em;
+}
+
+/* Optional: gradient variant for hero / display headings */
+.heading-gradient {
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Body Text Visibility ───────────────────────────────── */
+p,
+li,
+span,
+label {
+  color: #1a1a1a;
+  /* Near-black for max readability on cream */
+  line-height: 1.7;
+}
+
+.text-muted {
+  color: var(--gray);
+  /* #334155 — still clearly legible on cream */
+}
+
+.text-dim {
+  color: var(--gray-dim);
+  /* #94a3b8 — use only for secondary/meta text */
+}
+
+/* ─── Links & Accents ────────────────────────────────────── */
+a {
+  color: var(--teal);
+  /* #0088ff links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--teal-bright);
+  /* #33aaff on hover */
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal-dim);
+  /* #0062cc */
+  border-radius: 2px;
+}
+
+/* ─── Utility ────────────────────────────────────────────── */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ─── Animations ─────────────────────────────────────────── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes scanLine {
+  0% {
+    top: -2px;
+  }
+
+  100% {
+    top: 100%;
+  }
+}

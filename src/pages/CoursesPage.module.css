@@ -1,0 +1,395 @@
+.page {
+    min-height: 100vh;
+    background-color: var(--black);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* HERO */
+.hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 10rem 2rem 4rem;
+}
+
+.heroBg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.heroGrid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse at center, black 50%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 80%);
+}
+
+.heroGlow {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    height: 60vh;
+    background: radial-gradient(ellipse, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+}
+
+.ambientOrb1 {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    top: 25%;
+    left: 15%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), rgba(14, 165, 233, 0.8), rgba(2, 6, 23, 0.9));
+    box-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.5), 0 0 50px rgba(14, 165, 233, 0.3);
+    opacity: 0.5;
+    filter: blur(3px);
+    z-index: 1;
+    animation: floatOrb 10s ease-in-out infinite alternate;
+}
+
+@keyframes floatOrb {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+
+    100% {
+        transform: translateY(10px) scale(0.95);
+    }
+}
+
+.heroContent {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    z-index: 10;
+}
+
+.heroTag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--teal-bright);
+    border: 1px solid var(--glass-border);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.heroTitle {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 6rem);
+    letter-spacing: 0.05em;
+    color: var(--white);
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(180deg, #fff 0%, #cbd5e1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 10px 40px rgba(14, 165, 233, 0.3);
+}
+
+.heroDesc {
+    font-size: 1.1rem;
+    color: var(--gray);
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+/* COURSES GRID */
+.coursesSection {
+    padding: 4rem 0 8rem;
+    position: relative;
+}
+
+.coursesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.courseCard {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.courseCard:hover {
+    border-color: rgba(14, 165, 233, 0.4);
+    transform: translateY(-8px);
+    background: var(--glass-bg-hover);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(14, 165, 233, 0.05);
+}
+
+.cardImageWrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.courseCard:hover .cardImage {
+    transform: scale(1.05);
+}
+
+.cardTags {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--black);
+    background: var(--teal-bright);
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.cardContent {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.courseTitle {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+.courseDesc {
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.courseMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.metaText {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.cardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.enrollBtn {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.courseCard:hover .enrollBtn {
+    background: var(--text-gradient);
+    color: var(--black);
+    border-color: transparent;
+    font-weight: bold;
+}
+
+/* MODAL */
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 4rem 3rem;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.modalContent::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.2) 0%, transparent 70%);
+    filter: blur(30px);
+    pointer-events: none;
+}
+
+.modalIcon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: bounce 2s ease infinite;
+}
+
+.modalTitle {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.modalDesc {
+    font-size: 1rem;
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.closeBtn {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--black);
+    background: var(--text-gradient);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.closeBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

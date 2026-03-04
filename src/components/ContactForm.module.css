@@ -1,0 +1,83 @@
+.form {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 2.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: var(--glass-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.inputGroup label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--teal);
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    font-family: var(--font-body);
+    color: var(--black);
+    transition: all 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    border-color: var(--teal);
+    box-shadow: 0 0 0 4px rgba(0, 119, 221, 0.1);
+}
+
+.submitBtn {
+    background: var(--text-gradient);
+    color: var(--black);
+    border-radius: 12px;
+    padding: 1.2rem;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 119, 221, 0.3);
+}
+
+.success {
+    padding: 3rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    border-radius: 24px;
+    border: 1px solid rgba(37, 211, 102, 0.2);
+    text-align: center;
+}
+
+.success h3 {
+    color: #128c7e;
+    margin-bottom: 1rem;
+}
+
+.success p {
+    color: var(--gray);
+}
