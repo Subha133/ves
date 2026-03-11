@@ -101,7 +101,7 @@ export default function Home() {
             <div className={styles.divCardBg} style={{ '--accent': '#0e7490' }}></div>
             <div className={styles.divCardInner}>
               <span className={styles.divCardTag}>For Professionals</span>
-              <h3 className={styles.divCardTitle}>VES BRANDING</h3>
+              <h3 className={styles.divCardTitle}>VES BRAND</h3>
               <p className={styles.divCardDesc}>
                 {siteData.divisions.ves_branding.description}
               </p>
@@ -112,7 +112,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className={styles.divCta}>Explore VES Branding →</span>
+              <span className={styles.divCta}>Explore VES Brand →</span>
             </div>
           </Link>
 

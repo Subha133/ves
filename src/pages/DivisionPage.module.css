@@ -205,20 +205,41 @@
     text-align: center;
   }
   
+  .heroImageWrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  
   .heroImageContainer {
     width: 280px;
     height: 350px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 600px) {
+  .hero {
+    padding: 8rem 1rem 3rem;
+  }
+  
+  .heroContent {
+    padding: 0 1rem;
+  }
+  
   .heroImageContainer {
-    width: 240px;
-    height: 300px;
+    width: 260px;
+    height: 320px;
+    margin: 0 auto;
   }
   
   .heroTop {
     gap: 2rem;
+  }
+  
+  .heroText {
+    text-align: center;
+    min-width: auto;
+    width: 100%;
   }
 }
 
@@ -1491,5 +1512,261 @@
 
   .whyStats {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 1rem 2rem;
+  }
+  
+  .heroContent {
+    padding: 0 1rem;
+  }
+  
+  .heroTop {
+    gap: 2rem;
+  }
+  
+  .heroText {
+    text-align: center;
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .heroImageWrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .heroImageContainer {
+    width: 260px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  
+  .heroTag {
+    font-size: 0.65rem;
+    padding: 0.6rem 1.25rem;
+  }
+  
+  .heroHeading {
+    font-size: 2.5rem;
+  }
+  
+  .heroSub {
+    font-size: 1.125rem;
+    margin: 1.5rem 0;
+  }
+  
+  .heroCta {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .sectionHeader {
+    margin-bottom: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1.125rem;
+  }
+  
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .serviceCard {
+    padding: 1.5rem;
+    border-right: none !important;
+    border-bottom: 1px solid var(--gray-dim);
+  }
+  
+  .serviceCard:last-child {
+    border-bottom: none;
+  }
+  
+  .serviceRow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .serviceContent {
+    text-align: center;
+  }
+  
+  .serviceRow.serviceRowReverse .serviceContent {
+    text-align: center;
+    order: 2;
+  }
+  
+  .serviceRow.serviceRowReverse .serviceVisual {
+    align-items: center;
+    order: 1;
+  }
+  
+  .serviceVisual {
+    align-items: center;
+  }
+  
+  .serviceTitle {
+    font-size: 1.25rem;
+  }
+  
+  .serviceDesc {
+    font-size: 0.9375rem;
+  }
+  
+  .whyGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .whyCard {
+    padding: 1.5rem;
+  }
+  
+  .whyIcon {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+  }
+  
+  .whyTitle {
+    font-size: 1.25rem;
+  }
+  
+  .whyDesc {
+    font-size: 0.9375rem;
+  }
+  
+  .whyStats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .statCard {
+    padding: 1rem;
+  }
+  
+  .statValue {
+    font-size: 1.5rem;
+  }
+  
+  .statLabel {
+    font-size: 0.75rem;
+  }
+  
+  .trustedClients {
+    padding: 2rem 0;
+  }
+  
+  .clientLogos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .clientLogo {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 5rem 0.75rem 1.5rem;
+  }
+  
+  .heroContent {
+    padding: 0 0.75rem;
+  }
+  
+  .heroHeading {
+    font-size: 2rem;
+  }
+  
+  .heroSub {
+    font-size: 1rem;
+    margin: 1.25rem 0;
+  }
+  
+  .heroCta {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8125rem;
+  }
+  
+  .heroImageContainer {
+    width: 220px;
+    height: 270px;
+  }
+  
+  .section {
+    padding: 2.5rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .serviceCard {
+    padding: 1.25rem;
+  }
+  
+  .serviceTitle {
+    font-size: 1.125rem;
+  }
+  
+  .serviceDesc {
+    font-size: 0.875rem;
+  }
+  
+  .whyCard {
+    padding: 1.25rem;
+  }
+  
+  .whyIcon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  
+  .whyTitle {
+    font-size: 1.125rem;
+  }
+  
+  .whyDesc {
+    font-size: 0.875rem;
+  }
+  
+  .whyStats {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .statCard {
+    padding: 0.875rem;
+  }
+  
+  .statValue {
+    font-size: 1.25rem;
+  }
+  
+  .clientLogos {
+    grid-template-columns: 1fr;
+  }
+  
+  .clientLogo {
+    font-size: 0.8125rem;
+    padding: 0.625rem;
   }
 }

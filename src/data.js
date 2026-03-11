@@ -21,7 +21,7 @@ export const siteData = {
   navigation: {
     links: [
       { label: "Home", href: "/" },
-      { label: "VES Branding", href: "/branding" },
+      { label: "VES Brand", href: "/branding" },
       { label: "VES Business", href: "/business" },
       { label: "Courses", href: "/courses" },
       { label: "Contact", href: "#contact" }
@@ -30,10 +30,10 @@ export const siteData = {
   },
   divisions: {
     ves_branding: {
-      title: "VES Branding",
+      title: "VES Brand",
       subtitle: "Personal branding for high-impact professionals.",
       hero_label: "For Doctors & Coaches",
-      description: "For the last 5+ years, VES Branding has worked exclusively with doctors — helping them build strong trust, authority, ethical digital presence, and consistent business growth.",
+      description: "For the last 5+ years, VES Brand has worked exclusively with doctors — helping them build strong trust, authority, ethical digital presence, and consistent business growth.",
       target_audience: "Doctors, Coaches, Professionals",
       clients_count: "750+ doctors across India",
       trusted_clients: [

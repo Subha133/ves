@@ -238,3 +238,86 @@ a.contactItem:hover {
     text-align: center;
   }
 }
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .inner {
+    padding: 3rem 1rem 1.5rem;
+  }
+  
+  .top {
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .brandDesc {
+    max-width: 100%;
+    font-size: 0.8125rem;
+  }
+  
+  .colTitle {
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .link {
+    font-size: 0.8125rem;
+  }
+  
+  .contactItem {
+    font-size: 0.78rem;
+  }
+  
+  .socialLinks {
+    justify-content: center;
+  }
+  
+  .socialLink {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .socialLink svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding: 2.5rem 0.75rem 1.25rem;
+  }
+  
+  .top {
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .brandName {
+    font-size: 1rem;
+  }
+  
+  .brandDesc {
+    font-size: 0.75rem;
+  }
+  
+  .colTitle {
+    font-size: 0.55rem;
+  }
+  
+  .link {
+    font-size: 0.75rem;
+  }
+  
+  .contactItem {
+    font-size: 0.72rem;
+  }
+  
+  .copy {
+    font-size: 0.72rem;
+  }
+  
+  .policyLink {
+    font-size: 0.72rem;
+  }
+}

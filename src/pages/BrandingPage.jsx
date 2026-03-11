@@ -12,7 +12,7 @@ export default function BrandingPage() {
     return (
         <div className={styles.page}>
             <SEO
-                title="VES Branding - Authority for Doctors"
+                title="VES Brand - Authority for Doctors"
                 description="Specialized personal branding for doctors and healthcare professionals. Build trust and authority ethically."
                 path="/branding"
             />
@@ -29,7 +29,7 @@ export default function BrandingPage() {
                             <div className={styles.breadcrumb}>
                                 <Link to="/" className={styles.breadLink}>Home</Link>
                                 <span>/</span>
-                                <span>VES Branding</span>
+                                <span>VES Brand</span>
                             </div>
                             <span className={styles.heroTag}>{d.hero_label}</span>
                             <h1 className={styles.heroTitle}>{d.title.toUpperCase()}</h1>
@@ -198,7 +198,7 @@ export default function BrandingPage() {
                 <div className={styles.sectionInner}>
                     <div className={styles.whyGrid}>
                         <div className={styles.whyLeft}>
-                            <span className={styles.sectionLabel}>/ WHY VES BRANDING</span>
+                            <span className={styles.sectionLabel}>/ WHY VES BRAND</span>
                             <h2 className={styles.sectionTitle}>SO YOU CAN FOCUS<br />ON YOUR PATIENTS</h2>
                             <p className={styles.whyDesc}>
                                 While you're saving lives, we're building your brand. Our team handles every aspect of your digital presence — from content strategy to video production — so your expertise reaches the people who need it most.
@@ -260,7 +260,7 @@ export default function BrandingPage() {
                         READY TO BUILD<br />YOUR AUTHORITY?
                     </h2>
                     <p style={{ color: 'var(--gray)', marginBottom: '2.5rem', fontSize: '0.95rem' }}>
-                        Join 750+ doctors already growing with VES Branding.
+                        Join 750+ doctors already growing with VES Brand.
                     </p>
 
                     <div className={styles.formWrapper} style={{ maxWidth: '600px', margin: '0 auto' }}>

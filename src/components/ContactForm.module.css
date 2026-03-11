@@ -28,23 +28,46 @@
     color: var(--teal);
 }
 
+/* ✅ FIX 1: Force text color + caret color so typed text is always visible */
 .inputGroup input,
 .inputGroup textarea {
-    background: rgba(255, 255, 255, 0.4);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 1rem;
     font-family: var(--font-body);
-    color: var(--black);
+    font-size: 1rem;
+    color: #111111 !important;
+    caret-color: #111111;
     transition: all 0.3s ease;
+}
+
+/* ✅ FIX 2: Autofill override — prevents browser from forcing white text */
+.inputGroup input:-webkit-autofill,
+.inputGroup input:-webkit-autofill:hover,
+.inputGroup input:-webkit-autofill:focus,
+.inputGroup textarea:-webkit-autofill,
+.inputGroup textarea:-webkit-autofill:hover,
+.inputGroup textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: #111111 !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.9) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: #111111;
+}
+
+/* Placeholder styling */
+.inputGroup input::placeholder,
+.inputGroup textarea::placeholder {
+    color: rgba(0, 0, 0, 0.35);
 }
 
 .inputGroup input:focus,
 .inputGroup textarea:focus {
     outline: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.95);
     border-color: var(--teal);
     box-shadow: 0 0 0 4px rgba(0, 119, 221, 0.1);
+    color: #111111 !important;
 }
 
 .submitBtn {
@@ -57,6 +80,8 @@
     letter-spacing: 0.05em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 .submitBtn:hover {

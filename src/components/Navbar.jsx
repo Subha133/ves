@@ -31,10 +31,10 @@ export default function Navbar() {
           <span className={styles.logoText}>VISUAL EDIT STUDIO</span>
         </Link>
 
-        <button className={styles.menuBtn} onClick={() => setMenuOpen(!menuOpen)}>
-          <span className={`${styles.bar} ${menuOpen ? styles.open1 : ''}`}></span>
-          <span className={`${styles.bar} ${menuOpen ? styles.open2 : ''}`}></span>
-          <span className={`${styles.bar} ${menuOpen ? styles.open3 : ''}`}></span>
+        <button className={`${styles.menuButton} ${menuOpen ? styles.open : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
         <div className={`${styles.linksWrapper} ${menuOpen ? styles.mobileOpen : ''}`}>

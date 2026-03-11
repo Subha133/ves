@@ -11,7 +11,13 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 10rem 2rem 4rem;
+  padding: 8rem 1rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 10rem 2rem 4rem;
+  }
 }
 
 .heroBg {
@@ -239,20 +245,41 @@
     text-align: center;
   }
   
+  .heroImageWrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  
   .heroImageContainer {
     width: 280px;
     height: 350px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 600px) {
+  .hero {
+    padding: 6rem 1rem 3rem;
+  }
+  
+  .heroContent {
+    padding: 0 1rem;
+  }
+  
   .heroImageContainer {
-    width: 240px;
-    height: 300px;
+    width: 260px;
+    height: 320px;
+    margin: 0 auto;
   }
   
   .heroTop {
     gap: 2rem;
+  }
+  
+  .heroText {
+    text-align: center;
+    min-width: auto;
+    width: 100%;
   }
 }
 
@@ -954,5 +981,319 @@
 
   .caseCard {
     border-right: none !important;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .heroContent {
+    padding: 0 1rem;
+  }
+  
+  .heroTop {
+    gap: 2rem;
+  }
+  
+  .heroText {
+    text-align: center;
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .heroImageWrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .heroImageContainer {
+    width: 260px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  
+  .heroHeading {
+    font-size: 2.5rem;
+  }
+  
+  .heroSub {
+    font-size: 1.125rem;
+  }
+  
+  .whatWeDoGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .serviceCard {
+    padding: 1.5rem;
+  }
+  
+  .provenResults {
+    padding: 3rem 0;
+  }
+  
+  .resultsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .casesSection {
+    padding: 3rem 0;
+  }
+  
+  .casesGrid {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 6rem 0.75rem 2rem;
+  }
+  
+  .heroHeading {
+    font-size: 2rem;
+  }
+  
+  .heroImageContainer {
+    width: 220px;
+    height: 270px;
+  }
+  
+  .serviceCard {
+    padding: 1.25rem;
+  }
+  
+  .provenResults {
+    padding: 2.5rem 0;
+  }
+  
+  .casesSection {
+    padding: 2.5rem 0;
+  }
+}
+
+/* Comprehensive Mobile Optimizations */
+@media (max-width: 768px) {
+  .heroContent {
+    padding: 0 1rem;
+  }
+  
+  .heroTop {
+    gap: 2rem;
+  }
+  
+  .heroText {
+    text-align: center;
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .heroImageWrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .heroImageContainer {
+    width: 260px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  
+  .heroTag {
+    font-size: 0.65rem;
+    padding: 0.6rem 1.25rem;
+  }
+  
+  .heroHeading {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  
+  .heroSub {
+    font-size: 1.125rem;
+    margin: 1.5rem 0;
+  }
+  
+  .heroCta {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .heroStats {
+    gap: 2rem;
+  }
+  
+  .statItem {
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .statValue {
+    font-size: 1.5rem;
+  }
+  
+  .statLabel {
+    font-size: 0.75rem;
+  }
+  
+  .whatWeDoGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .serviceCard {
+    padding: 1.5rem;
+  }
+  
+  .serviceIcon {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+  }
+  
+  .serviceTitle {
+    font-size: 1.25rem;
+  }
+  
+  .serviceDesc {
+    font-size: 0.9375rem;
+  }
+  
+  .provenResults {
+    padding: 3rem 0;
+  }
+  
+  .resultsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .resultCard {
+    padding: 1.5rem;
+  }
+  
+  .resultNumber {
+    font-size: 2.5rem;
+  }
+  
+  .resultLabel {
+    font-size: 1rem;
+  }
+  
+  .resultDesc {
+    font-size: 0.9375rem;
+  }
+  
+  .testimonialQuote {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  
+  .testimonialAuthor {
+    font-size: 0.875rem;
+  }
+  
+  .casesSection {
+    padding: 3rem 0;
+  }
+  
+  .casesGrid {
+    gap: 1rem;
+  }
+  
+  .caseCard {
+    padding: 1.5rem 1rem;
+  }
+  
+  .caseType {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+  }
+  
+  .caseResult {
+    font-size: 1.25rem;
+  }
+  
+  .caseDetail {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 6rem 0.75rem 2rem;
+  }
+  
+  .heroContent {
+    padding: 0 0.75rem;
+  }
+  
+  .heroHeading {
+    font-size: 2rem;
+  }
+  
+  .heroSub {
+    font-size: 1rem;
+    margin: 1.25rem 0;
+  }
+  
+  .heroCta {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8125rem;
+  }
+  
+  .heroImageContainer {
+    width: 220px;
+    height: 270px;
+  }
+  
+  .heroStats {
+    gap: 1rem;
+  }
+  
+  .statItem {
+    padding: 0.625rem 1rem;
+  }
+  
+  .statValue {
+    font-size: 1.25rem;
+  }
+  
+  .whatWeDoSection {
+    padding: 2.5rem 0;
+  }
+  
+  .serviceCard {
+    padding: 1.25rem;
+  }
+  
+  .serviceIcon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  
+  .provenResults {
+    padding: 2.5rem 0;
+  }
+  
+  .resultCard {
+    padding: 1.25rem;
+  }
+  
+  .resultNumber {
+    font-size: 2rem;
+  }
+  
+  .casesSection {
+    padding: 2.5rem 0;
+  }
+  
+  .caseCard {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .caseResult {
+    font-size: 1.125rem;
   }
 }

@@ -393,3 +393,161 @@
         transform: translateY(-10px);
     }
 }
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .hero {
+        padding: 8rem 1rem 3rem;
+        min-height: 40vh;
+    }
+    
+    .heroContent {
+        padding: 0 1rem;
+    }
+    
+    .heroTag {
+        font-size: 0.65rem;
+        padding: 0.6rem 1.25rem;
+    }
+    
+    .heroHeading {
+        font-size: 2.5rem;
+    }
+    
+    .heroSub {
+        font-size: 1.125rem;
+        margin: 1.5rem 0;
+    }
+    
+    .coursesSection {
+        padding: 3rem 0;
+    }
+    
+    .sectionHeader {
+        margin-bottom: 2rem;
+    }
+    
+    .sectionTitle {
+        font-size: 2rem;
+    }
+    
+    .sectionSubtitle {
+        font-size: 1.125rem;
+    }
+    
+    .coursesGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .courseCard {
+        padding: 1.5rem;
+    }
+    
+    .courseImage {
+        height: 200px;
+    }
+    
+    .courseTitle {
+        font-size: 1.25rem;
+    }
+    
+    .courseDesc {
+        font-size: 0.9375rem;
+    }
+    
+    .courseMeta {
+        gap: 1rem;
+    }
+    
+    .metaItem {
+        font-size: 0.75rem;
+    }
+    
+    .price {
+        font-size: 1.5rem;
+    }
+    
+    .enrollBtn {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    .hero {
+        padding: 6rem 0.75rem 2rem;
+    }
+    
+    .heroContent {
+        padding: 0 0.75rem;
+    }
+    
+    .heroHeading {
+        font-size: 2rem;
+    }
+    
+    .heroSub {
+        font-size: 1rem;
+        margin: 1.25rem 0;
+    }
+    
+    .coursesSection {
+        padding: 2.5rem 0;
+    }
+    
+    .sectionTitle {
+        font-size: 1.75rem;
+    }
+    
+    .courseCard {
+        padding: 1.25rem;
+    }
+    
+    .courseImage {
+        height: 180px;
+    }
+    
+    .courseTitle {
+        font-size: 1.125rem;
+    }
+    
+    .courseDesc {
+        font-size: 0.875rem;
+    }
+    
+    .metaItem {
+        font-size: 0.7rem;
+    }
+    
+    .price {
+        font-size: 1.25rem;
+    }
+    
+    .enrollBtn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.8125rem;
+    }
+    
+    .modalContent {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .modalHeader {
+        padding-bottom: 1rem;
+    }
+    
+    .closeBtn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+}

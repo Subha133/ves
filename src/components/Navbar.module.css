@@ -128,40 +128,45 @@
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2), 0 0 15px var(--teal-bright);
 }
 
-.menuBtn {
+.menuButton {
   display: none;
   flex-direction: column;
-  gap: 5px;
-  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   background: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   cursor: pointer;
+  z-index: 101;
+  padding: 0;
   transition: background 0.3s ease;
 }
 
-.menuBtn:hover {
+.menuButton:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.bar {
+.menuButton span {
   display: block;
   width: 20px;
   height: 2px;
   background: var(--white);
-  transition: all 0.3s;
+  margin: 2.5px 0;
+  transition: all 0.3s ease;
   border-radius: 2px;
 }
 
-.open1 {
+.menuButton.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.open2 {
+.menuButton.open span:nth-child(2) {
   opacity: 0;
 }
 
-.open3 {
+.menuButton.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -185,7 +190,7 @@
     background: rgba(242, 239, 218, 0.95);
   }
 
-  .menuBtn {
+  .menuButton {
     display: flex;
   }
 
@@ -237,5 +242,44 @@
 
   .ctaBtn {
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav.scrolled {
+    width: calc(100% - 2rem);
+    padding: 0.5rem 1rem;
+  }
+
+  .logoText {
+    font-size: 1rem;
+  }
+
+  .logoImg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    top: 0.5rem;
+    width: calc(100% - 1rem);
+    padding: 0.75rem;
+  }
+
+  .nav.scrolled {
+    top: 0.25rem;
+    width: calc(100% - 1rem);
+    padding: 0.5rem 0.75rem;
+  }
+
+  .logoText {
+    font-size: 0.875rem;
+  }
+
+  .logoImg {
+    width: 28px;
+    height: 28px;
   }
 }
