@@ -39,7 +39,7 @@
     -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 80%);
 }
 
-.heroGlow {
+.heroGlow1 {
     position: absolute;
     top: 10%;
     left: 50%;
@@ -48,7 +48,33 @@
     height: 60vh;
     background: radial-gradient(ellipse, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
     border-radius: 50%;
-    filter: blur(60px);
+    filter: blur(40px);
+}
+
+.heroGlow2 {
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(ellipse, rgba(245, 203, 167, 0.15) 0%, transparent 60%);
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.ambientOrb2 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    bottom: 20%;
+    left: 15%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), rgba(245, 203, 167, 0.6), rgba(2, 6, 23, 0.9));
+    box-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.5), 0 0 50px rgba(245, 203, 167, 0.2);
+    opacity: 0.5;
+    filter: blur(3px);
+    z-index: 1;
+    animation: floatOrb 15s ease-in-out infinite alternate-reverse;
 }
 
 .ambientOrb1 {

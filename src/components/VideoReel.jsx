@@ -1,22 +1,9 @@
 import { useRef, useEffect, useState } from 'react';
+import siteData from '../data/site-data.json';
 import styles from './VideoReel.module.css';
 
 // All videos available in /public/videos/
-const ALL_VIDEOS = [
-  { src: '/videos/astrology.mp4', label: 'Astrology' },
-  { src: '/videos/buisness.mp4', label: 'Business' },
-  { src: '/videos/buisness2.mp4', label: 'Business 2' },
-  { src: '/videos/cooking.mp4', label: 'Cooking' },
-  { src: '/videos/doctor.mp4', label: 'Doctor' },
-  { src: '/videos/education.mp4', label: 'Education' },
-  { src: '/videos/fashion.mp4', label: 'Fashion' },
-  { src: '/videos/fitness coach.mp4', label: 'Fitness Coach' },
-  { src: '/videos/gym.mp4', label: 'Gym' },
-  { src: '/videos/makeup.mp4', label: 'Makeup' },
-  { src: '/videos/ves_buisness.mp4', label: 'VES Business' },
-  { src: '/videos/ves_intro.mp4', label: 'VES Intro' },
-  { src: '/videos/ves_intro2.mp4', label: 'VES Intro 2' },
-];
+const ALL_VIDEOS = siteData.reel_videos;
 
 function VideoCard({ video, isActive, onClick }) {
   const videoRef = useRef(null);
@@ -50,7 +37,7 @@ function VideoCard({ video, isActive, onClick }) {
         />
       </div>
       <div className={styles.cardInfo}>
-        <p className={styles.cardTitle}>{video.label}</p>
+        <p className={styles.cardTitle}>{video.title || video.label}</p>
         <p className={styles.clickLabel}>{isActive ? 'PLAYING SOUND' : 'CLICK TO LISTEN'}</p>
       </div>
     </div>

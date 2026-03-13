@@ -1,0 +1,783 @@
+{
+  "company": {
+    "name": "Visual Edit Studio",
+    "tagline": "We Build Authority & Scale Brands.",
+    "description": "Creative and performance-driven studio. We build authority for professionals and scale revenue for businesses.",
+    "stats": {
+      "clients": "750+",
+      "years_impact": "5+",
+      "avg_roi_spike": "4x"
+    },
+    "contact": {
+      "phone": "+91 8961633327",
+      "email": "hr.veseditstudio@gmail.com",
+      "address": "Charubala Apartment, Thakurpukur, Kolkata, West Bengal 700063",
+      "response_time": "Under 2 hours",
+      "social": {
+        "instagram": "https://www.instagram.com/ves_brand_",
+        "facebook": "https://facebook.com/visualeditstudio",
+        "linkedin": "https://linkedin.com/company/visualeditstudio",
+        "twitter": "https://twitter.com/visualeditstudio",
+        "whatsapp": "https://wa.me/918961633327"
+      }
+    }
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "VES Brand",
+        "href": "/branding"
+      },
+      {
+        "label": "VES Business",
+        "href": "/business"
+      },
+      {
+        "label": "Courses",
+        "href": "/courses"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "cta": "Start Growing"
+  },
+  "divisions": {
+    "ves_branding": {
+      "title": "VES Brand",
+      "subtitle": "Personal branding for high-impact professionals.",
+      "hero_label": "For Doctors & Coaches",
+      "description": "For the last 5+ years, VES Brand has worked exclusively with doctors — helping them build strong trust, authority, ethical digital presence, and consistent business growth.",
+      "target_audience": "Doctors, Coaches, Professionals",
+      "clients_count": "750+ doctors across India",
+      "trusted_clients": [
+        "Dr. Sapna Kaswan",
+        "Dr. Deepti Arora",
+        "Dr. Saqlain Mohamed",
+        "Dr. Md Rizwan",
+        "Vedgarbha Ayurveda",
+        "Dr. Sunny Khurana"
+      ],
+      "services": [
+        {
+          "title": "Content Strategy",
+          "desc": "Customized monthly content plans that resonate with your audience."
+        },
+        {
+          "title": "Scriptwriting",
+          "desc": "Professional scripts crafted to communicate authority and trust."
+        },
+        {
+          "title": "Reels Editing",
+          "desc": "High-quality short-form video editing that drives engagement."
+        },
+        {
+          "title": "SEO Captions",
+          "desc": "Optimized captions that boost discoverability across platforms."
+        },
+        {
+          "title": "Medical Compliance",
+          "desc": "Ethical and compliant branding tailored for healthcare professionals."
+        }
+      ],
+      "videos": [
+        {
+          "src": "/doctors video/4k colour.mp4",
+          "label": "Doctor"
+        },
+        {
+          "src": "/doctors video/Doctor demo.mp4",
+          "label": "Doctor"
+        },
+        {
+          "src": "/doctors video/medical important topic.mp4",
+          "label": "Doctor"
+        }
+      ],
+      "youtube_videos": [
+        {
+          "id": "M7lc1UVf-VE",
+          "title": "Dr. Aditya | Personal Branding",
+          "specialty": "Dermatology · Mumbai",
+          "views": "142K views"
+        },
+        {
+          "id": "kJQP7kiw5Fk",
+          "title": "Dr. Kapoor | Medical Authority",
+          "specialty": "Orthopedics · Pune",
+          "views": "85K views"
+        },
+        {
+          "id": "tPEE9ZwTmy0",
+          "title": "Dr. Verma | Clinic Growth",
+          "specialty": "Cosmetology · Delhi",
+          "views": "210K views"
+        },
+        {
+          "id": "3JZ_D3ELwOQ",
+          "title": "Dr. Reddy | Clinical Success",
+          "specialty": "Cardiology · Hyderabad",
+          "views": "65K views"
+        },
+        {
+          "id": "dQw4w9WgXcQ",
+          "title": "Dr. Sharma | Branding Masterclass",
+          "specialty": "Oncology · Bengaluru",
+          "views": "115K views"
+        }
+      ],
+      "posters": [
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431725/ves5_ecg7ou.jpg",
+          "alt": "Client Poster 1",
+          "title": "Clinic Launch Promo"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431725/ves9_o3twjb.jpg",
+          "alt": "Client Poster 2",
+          "title": "Health Awareness Campaign"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431725/ves8_fzaswv.jpg",
+          "alt": "Client Poster 3",
+          "title": "Medical Seminar Event"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431725/ves3_xd9rvo.jpg",
+          "alt": "Client Poster 4",
+          "title": "Doctor Profile Showcase"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431725/ves6_fuwv3p.jpg",
+          "alt": "Client Poster 5",
+          "title": "Wellness Package"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431725/ves7_zgv6fs.jpg",
+          "alt": "Client Poster 6",
+          "title": "Expert Consultation"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772436066/ves_20_gffmxe.png",
+          "alt": "Client Poster 7",
+          "title": "Brand Showcase"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431725/ves10_mxy3fr.jpg",
+          "alt": "Client Poster 8",
+          "title": "Digital Presence"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431724/ves2_tzkxlc.jpg",
+          "alt": "Client Poster 9",
+          "title": "Marketing Campaign"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431724/ves11_l8yffv.jpg",
+          "alt": "Client Poster 10",
+          "title": "Social Media Strategy"
+        },
+        {
+          "src": "https://res.cloudinary.com/debvroycl/image/upload/v1772431724/ves1_nr5cu9.jpg",
+          "alt": "Client Poster 11",
+          "title": "Authority Building"
+        }
+      ],
+      "video_categories": [
+        {
+          "category": "Healthcare",
+          "title": "Medical Branding",
+          "client_type": "Healthcare Professional",
+          "color": "#0088aa"
+        },
+        {
+          "category": "Education",
+          "title": "Educational Content",
+          "client_type": "Learning Institute",
+          "color": "#006688"
+        },
+        {
+          "category": "Beauty",
+          "title": "Beauty Tutorial",
+          "client_type": "Makeup Artist",
+          "color": "#004466"
+        },
+        {
+          "category": "Portfolio",
+          "title": "VES Showcase",
+          "client_type": "VES Brand",
+          "color": "#0088aa"
+        },
+        {
+          "category": "Lifestyle",
+          "title": "Astrology Content",
+          "client_type": "Spiritual Guide",
+          "color": "#005577"
+        },
+        {
+          "category": "Fitness",
+          "title": "Fitness Coaching",
+          "client_type": "Personal Trainer",
+          "color": "#007799"
+        }
+      ]
+    },
+    "ves_business": {
+      "title": "VES Business",
+      "subtitle": "Performance marketing for businesses ready to scale.",
+      "hero_label": "For Agencies & Scale",
+      "description": "Performance marketing and ad production for businesses ready to scale. We turn viewers into high-ticket clients through data-driven visual strategy.",
+      "target_audience": "Agencies, Businesses, E-commerce",
+      "notable_clients": [
+        "Ayurnnath",
+        "Suvankar Saha"
+      ],
+      "services": [
+        {
+          "title": "Meta Ads",
+          "desc": "High-converting Facebook and Instagram ad campaigns that drive real revenue."
+        },
+        {
+          "title": "Google Ads",
+          "desc": "Search and display campaigns that capture intent and convert at scale."
+        },
+        {
+          "title": "Ad Film Production",
+          "desc": "Cinematic ad videos that stop the scroll and demand attention."
+        },
+        {
+          "title": "Funnel Strategy",
+          "desc": "End-to-end funnel systems engineered for maximum conversion."
+        },
+        {
+          "title": "Brand Campaigns",
+          "desc": "Full rebrand and awareness campaigns that transform market positioning."
+        }
+      ],
+      "video_categories": [
+        {
+          "category": "Fitness",
+          "title": "Gym Promo Video",
+          "client_type": "Fitness Center",
+          "color": "#0088aa"
+        },
+        {
+          "category": "Fashion",
+          "title": "Fashion Campaign",
+          "client_type": "Style Studio",
+          "color": "#006688"
+        },
+        {
+          "category": "Food & Beverage",
+          "title": "Cooking Show",
+          "client_type": "Food Channel",
+          "color": "#004466"
+        },
+        {
+          "category": "Corporate",
+          "title": "VES Business Reel",
+          "client_type": "VES Brand",
+          "color": "#0088aa"
+        },
+        {
+          "category": "Commercial",
+          "title": "Business Promo",
+          "client_type": "Corporate Client",
+          "color": "#005577"
+        },
+        {
+          "category": "Corporate",
+          "title": "Business Ad Film",
+          "client_type": "Enterprise",
+          "color": "#007799"
+        }
+      ]
+    }
+  },
+  "case_studies": [
+    {
+      "client": "TechCorp",
+      "type": "Meta Ads + Funnel",
+      "result": "4x ROAS",
+      "detail": "Scaled from $5K to $45K/month in revenue within 90 days using optimized ad funnels."
+    },
+    {
+      "client": "Dr. Arjun",
+      "type": "Personal Branding",
+      "result": "10K+ Followers",
+      "detail": "Built a professional brand from scratch, reaching 10K engaged followers in 60 days."
+    },
+    {
+      "client": "StyleHub",
+      "type": "E-Commerce Ads",
+      "result": "320% Revenue",
+      "detail": "Complete Meta & Google Ads strategy that tripled online store revenue quarter-over-quarter."
+    },
+    {
+      "client": "FinAdvisor",
+      "type": "LinkedIn Growth",
+      "result": "50K Reach",
+      "detail": "Built a dominant LinkedIn presence that generates consistent inbound leads weekly."
+    },
+    {
+      "client": "SaaS Pro",
+      "type": "Google Ads",
+      "result": "2.1x Pipeline",
+      "detail": "Strategic Google Ads restructure that doubled qualified pipeline in under 45 days."
+    },
+    {
+      "client": "FreshBite",
+      "type": "Full Rebrand",
+      "result": "8x Engagement",
+      "detail": "Complete brand overhaul including visual identity and social presence transformation."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Rahul Mehta",
+      "role": "Founder, TechCorp",
+      "quote": "VES transformed our ad strategy completely. We went from burning money to printing it. The ROI speaks for itself."
+    },
+    {
+      "name": "Dr. Arjun Sharma",
+      "role": "Healthcare Professional",
+      "quote": "I never thought personal branding could change my career this much. VES made me the go-to authority in my field."
+    },
+    {
+      "name": "Priya Kapoor",
+      "role": "CEO, StyleHub",
+      "quote": "The team at VES doesn't just run ads — they engineer growth systems. Our revenue tripled in one quarter."
+    },
+    {
+      "name": "Vikram Singh",
+      "role": "Financial Advisor",
+      "quote": "From zero online presence to 50K reach in weeks. VES understands how to build trust at scale."
+    }
+  ],
+  "courses": [
+    {
+      "id": "personal-branding-masterclass",
+      "title": "Personal Branding Masterclass",
+      "description": "Learn how to build a powerful personal brand that attracts high-ticket clients and establishes you as an authority in your niche.",
+      "instructor": "VES Experts",
+      "duration": "4 Weeks",
+      "level": "Beginner to Advanced",
+      "price": "$299",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      "id": "meta-ads-blueprint",
+      "title": "The Ultimate Meta Ads Blueprint",
+      "description": "Master Facebook and Instagram advertising. Learn the exact strategies we use to generate 4x+ ROAS for our agency clients.",
+      "instructor": "VES Experts",
+      "duration": "6 Weeks",
+      "level": "Intermediate",
+      "price": "$499",
+      "image": "https://images.unsplash.com/photo-1432888117426-1d5ac0c?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      "id": "content-creation-system",
+      "title": "Content Creation System",
+      "description": "A complete workflow for scripting, shooting, and editing high-converting vertical video content (Reels/Shorts/TikTok) in under 2 hours a week.",
+      "instructor": "VES Experts",
+      "duration": "3 Weeks",
+      "level": "All Levels",
+      "price": "$199",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+    }
+  ],
+  "client_videos": [
+    {
+      "id": "mudit-sir-12",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322587/Mudit_Sir_Reel_12_d9ohqs.mp4",
+      "poster": "/posters/mudit.jpg",
+      "title": "Mudit Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "anamika-maam-1",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322567/Anamika_ma_am_reel_1_fxld72.mp4",
+      "poster": "/posters/anamika.jpg",
+      "title": "Anamika Ma'am",
+      "client": "Authority Building"
+    },
+    {
+      "id": "rizwan-sir-3",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322564/Rizwan_Sir_Reel_3_v4u38a.mp4",
+      "poster": "/posters/rizwan.jpg",
+      "title": "Rizwan Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "zaid-khan-5",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322554/Zaid_Khan_sir_reel_5_alrf6h.mp4",
+      "poster": "/posters/default.jpg",
+      "title": "Zaid Khan Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "wellvora-6",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322554/Wellvora_Reel_6_oke1fk.mp4",
+      "poster": "/posters/default.jpg",
+      "title": "Wellvora",
+      "client": "Motion Graphic"
+    },
+    {
+      "id": "deepti-maam-2",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322552/Deepti_ma_am_reel_2_gqowzp.mp4",
+      "poster": "/posters/deepti.jpg",
+      "title": "Deepti Ma'am",
+      "client": "Authority Building"
+    },
+    {
+      "id": "zaid-khan-6",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322546/Zaid_Khan_sir_reel_6_jyisvq.mp4",
+      "poster": "/posters/default.jpg",
+      "title": "Zaid Khan Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "rizwan-sir-4",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322541/Rizwan_Sir_Reel_4_ss4spl.mp4",
+      "poster": "/posters/rizwan.jpg",
+      "title": "Rizwan Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "anamika-maam-3",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322535/Anamika_ma_am_reel_3_nf5wu4.mp4",
+      "poster": "/posters/anamika.jpg",
+      "title": "Anamika Ma'am",
+      "client": "Authority Building"
+    },
+    {
+      "id": "deepti-maam-2-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322520/Deepti_ma_am_reel_2_vlxpw5.mp4",
+      "poster": "/posters/deepti.jpg",
+      "title": "Deepti Ma'am",
+      "client": "Authority Building"
+    },
+    {
+      "id": "zaid-khan-6-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322478/Zaid_Khan_sir_reel_6_tuzi9e.mp4",
+      "poster": "/posters/default.jpg",
+      "title": "Zaid Khan Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "rizwan-sir-4-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322478/Rizwan_Sir_Reel_4_dcivvt.mp4",
+      "poster": "/posters/rizwan.jpg",
+      "title": "Rizwan Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "anamika-maam-3-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322478/Anamika_ma_am_reel_3_lcaayy.mp4",
+      "poster": "/posters/anamika.jpg",
+      "title": "Anamika Ma'am",
+      "client": "Authority Building"
+    },
+    {
+      "id": "anamika-maam-1-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322473/Anamika_ma_am_reel_1_twwh6z.mp4",
+      "poster": "/posters/anamika.jpg",
+      "title": "Anamika Ma'am",
+      "client": "Authority Building"
+    },
+    {
+      "id": "rizwan-sir-3-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322472/Rizwan_Sir_Reel_3_xahpdj.mp4",
+      "poster": "/posters/rizwan.jpg",
+      "title": "Rizwan Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "zaid-khan-5-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322472/Zaid_Khan_sir_reel_5_mseowk.mp4",
+      "poster": "/posters/default.jpg",
+      "title": "Zaid Khan Sir",
+      "client": "Personal Branding"
+    },
+    {
+      "id": "wellvora-6-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322472/Wellvora_Reel_6_tf1seh.mp4",
+      "poster": "/posters/default.jpg",
+      "title": "Wellvora",
+      "client": "Motion Graphic"
+    },
+    {
+      "id": "mudit-sir-12-alt",
+      "src": "https://res.cloudinary.com/dzr5dorsx/video/upload/v1773322466/Mudit_Sir_Reel_12_kophcv.mp4",
+      "poster": "/posters/mudit.jpg",
+      "title": "Mudit Sir",
+      "client": "Personal Branding"
+    }
+  ],
+  "gallery_images": [
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772440000/WhatsApp_Image_2026-02-20_at_11.44.08_PM_md1mrh.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439999/WhatsApp_Image_2026-02-12_at_5.10.49_PM_dr8bgw.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439999/WhatsApp_Image_2026-02-23_at_8.00.10_PM_gxwbc5.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439998/WhatsApp_Image_2026-02-10_at_12.20.33_PM_pcetyn.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439998/WhatsApp_Image_2026-02-06_at_1.46.30_PM_uzsxpz.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439997/WhatsApp_Image_2025-12-26_at_4.51.39_PM_yys28x.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439996/WhatsApp_Image_2026-02-12_at_5.42.19_PM_zqdapn.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439995/WhatsApp_Image_2026-02-12_at_1.47.15_PM_drc4hq.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439995/WhatsApp_Image_2026-01-21_at_2.25.48_PM_xrgidy.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439995/WhatsApp_Image_2025-12-05_at_6.29.38_PM_1_a9dgb7.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439994/WhatsApp_Image_2026-02-07_at_2.31.30_PM_kkgdnk.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439993/WhatsApp_Image_2025-12-05_at_6.29.38_PM_ixb1jd.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439992/WhatsApp_Image_2026-02-13_at_12.30.09_PM_urhny2.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439992/Ayurnath_Reel_Doctor_1_jbrnr4.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439991/WhatsApp_Image_2025-11-28_at_8.08.26_PM_jojtv6.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439990/WhatsApp_Image_2025-12-24_at_11.57.38_AM_jelpxr.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439989/WhatsApp_Image_2025-11-05_at_6.11.07_PM_fixejs.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439946/WhatsApp_Image_2026-02-23_at_8.00.10_PM_gmkioq.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439944/WhatsApp_Image_2026-02-20_at_11.44.08_PM_ohtzzw.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439944/WhatsApp_Image_2026-02-13_at_12.30.09_PM_iicgmp.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439943/WhatsApp_Image_2026-02-12_at_5.42.19_PM_ololal.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439941/WhatsApp_Image_2026-02-12_at_5.10.49_PM_xpluk2.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439941/WhatsApp_Image_2026-02-12_at_1.47.15_PM_aonmcp.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439940/WhatsApp_Image_2026-02-10_at_12.20.33_PM_cyucru.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439939/WhatsApp_Image_2026-02-07_at_2.31.30_PM_euor4j.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439938/WhatsApp_Image_2026-02-06_at_1.46.30_PM_rdn3b6.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439937/WhatsApp_Image_2026-01-21_at_2.25.48_PM_eohgcs.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439937/WhatsApp_Image_2025-12-26_at_4.51.39_PM_z3iqxb.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439936/WhatsApp_Image_2025-12-24_at_11.57.38_AM_phoqpk.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439936/WhatsApp_Image_2025-12-20_at_10.34.41_AM_sewrvb.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439935/WhatsApp_Image_2025-12-05_at_6.29.38_PM_1_sznpk9.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439935/WhatsApp_Image_2025-12-05_at_6.29.38_PM_xcji5a.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439935/WhatsApp_Image_2025-11-28_at_8.08.26_PM_yml57x.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439934/WhatsApp_Image_2025-11-05_at_6.11.07_PM_mq9rdu.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1772439934/Ayurnath_Reel_Doctor_1_ex19as.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313077/WhatsApp_Image_2026-03-11_at_12.53.57_PM_2_h0qugg.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313089/WhatsApp_Image_2026-03-11_at_12.53.57_PM_1_auvs5l.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313098/WhatsApp_Image_2026-03-11_at_12.53.57_PM_egcjit.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313109/WhatsApp_Image_2026-03-11_at_12.53.56_PM_2_l9de5f.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313121/WhatsApp_Image_2026-03-11_at_12.53.56_PM_1_ngsrj3.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313134/WhatsApp_Image_2026-03-11_at_12.53.56_PM_f0v6ys.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313146/WhatsApp_Image_2026-03-11_at_12.53.54_PM_unaxcb.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313158/WhatsApp_Image_2026-03-11_at_12.53.52_PM_u3i17i.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313169/WhatsApp_Image_2026-03-11_at_12.53.50_PM_rhkjlb.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313181/WhatsApp_Image_2026-03-11_at_12.53.49_PM_mzrixa.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313216/WhatsApp_Image_2026-03-11_at_12.53.47_PM_juoia8.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313273/WhatsApp_Image_2026-03-11_at_12.53.45_PM_sbvd68.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313289/WhatsApp_Image_2026-03-11_at_12.53.43_PM_pabepu.jpg",
+    "https://res.cloudinary.com/debvroycl/image/upload/f_auto,q_auto/v1773313303/WhatsApp_Image_2026-03-11_at_12.53.41_PM_lxu3dh.jpg"
+  ],
+  "reel_videos": [
+    {
+      "src": "/videos/astrology.mp4",
+      "label": "Astrology"
+    },
+    {
+      "src": "/videos/buisness.mp4",
+      "label": "Business"
+    },
+    {
+      "src": "/videos/buisness2.mp4",
+      "label": "Business 2"
+    },
+    {
+      "src": "/videos/cooking.mp4",
+      "label": "Cooking"
+    },
+    {
+      "src": "/videos/doctor.mp4",
+      "label": "Doctor"
+    },
+    {
+      "src": "/videos/education.mp4",
+      "label": "Education"
+    },
+    {
+      "src": "/videos/fashion.mp4",
+      "label": "Fashion"
+    },
+    {
+      "src": "/videos/fitness coach.mp4",
+      "label": "Fitness Coach"
+    },
+    {
+      "src": "/videos/gym.mp4",
+      "label": "Gym"
+    },
+    {
+      "src": "/videos/makeup.mp4",
+      "label": "Makeup"
+    },
+    {
+      "src": "/videos/ves_buisness.mp4",
+      "label": "VES Business"
+    },
+    {
+      "src": "/videos/ves_intro.mp4",
+      "label": "VES Intro"
+    },
+    {
+      "src": "/videos/ves_intro2.mp4",
+      "label": "VES Intro 2"
+    }
+  ],
+  "home_videos": [
+    {
+      "id": "rizwan-sir-07",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322078/Rizwan_sir_Reel_07_j4chu9.mp4",
+      "title": "Rizwan Sir",
+      "client": "Reel 07"
+    },
+    {
+      "id": "sapna-mam-05",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322071/Sapna_mam_reel_05_ym92jr.mp4",
+      "title": "Sapna Ma'am",
+      "client": "Reel 05"
+    },
+    {
+      "id": "sneha-mam-03",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322075/Sneha_Mam_Reel_03_chyfiu.mp4",
+      "title": "Sneha Ma'am",
+      "client": "Reel 03"
+    },
+    {
+      "id": "saqlain-sir-14",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322071/Saqlain_sir_reel_14_kzfkd8.mp4",
+      "title": "Saqlain Sir",
+      "client": "Reel 14"
+    },
+    {
+      "id": "abhijit-sir-01",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322071/Abhijit_sir_reel_01_ib3iyc.mp4",
+      "title": "Abhijit Sir",
+      "client": "Reel 01"
+    },
+    {
+      "id": "harsh-singh-02",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322066/Harsh_Singh_reel_02_wo03dp.mp4",
+      "title": "Harsh Singh",
+      "client": "Reel 02"
+    },
+    {
+      "id": "mohammed-sir-08",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322066/Mohammed_sir_reel_08_dwev8l.mp4",
+      "title": "Mohammed Sir",
+      "client": "Reel 08"
+    },
+    {
+      "id": "purn-pragya-02",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322062/Purn_pragya_reel_02_q5gcw3.mp4",
+      "title": "Purn Pragya",
+      "client": "Reel 02"
+    },
+    {
+      "id": "sunny-khurana-03",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322055/Sunny_Khurana_reel_03_izkn5a.mp4",
+      "title": "Sunny Khurana",
+      "client": "Reel 03"
+    },
+    {
+      "id": "mudit-sir-06",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322053/Mudit_sir_reel_06_iye621.mp4",
+      "title": "Mudit Sir",
+      "client": "Reel 06"
+    },
+    {
+      "id": "dr-sunita-wadhwani-01",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322050/Dr_Sunita_Wadhwani_reel_01_icdxsl.mp4",
+      "title": "Dr. Sunita Wadhwani",
+      "client": "Reel 01"
+    },
+    {
+      "id": "anamika-maam-01",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322049/Anamika_ma_am_reel_01_zalolm.mp4",
+      "title": "Anamika Ma'am",
+      "client": "Reel 01"
+    },
+    {
+      "id": "saqlain-reel-11",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322049/Saqlain_Reel_11_ugwlf3.mp4",
+      "title": "Saqlain Sir",
+      "client": "Reel 11"
+    },
+    {
+      "id": "ayurnnath-ad-5",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322048/Ayurnnath_AD_5_cbk9xp.mp4",
+      "title": "Ayurnnath",
+      "client": "AD 5"
+    },
+    {
+      "id": "kanade-baburao",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322046/Kanade_baburao_szlnvn.mp4",
+      "title": "Kanade Baburao",
+      "client": "Reel"
+    },
+    {
+      "id": "deepti-maam-04",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322042/Deepti_ma_am_reel_04_ppchav.mp4",
+      "title": "Deepti Ma'am",
+      "client": "Reel 04"
+    },
+    {
+      "id": "hitesh-01",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322042/Hitesh_reel_01_qn9gv5.mp4",
+      "title": "Hitesh Sir",
+      "client": "Reel 01"
+    },
+    {
+      "id": "priyanka-maam-04",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322039/Priyanka_ma_am_reel_04_glufw2.mp4",
+      "title": "Priyanka Ma'am",
+      "client": "Reel 04"
+    },
+    {
+      "id": "rizwan-sir-06",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322034/Rizwan_sir_reel_06_q7icmv.mp4",
+      "title": "Rizwan Sir",
+      "client": "Reel 06"
+    },
+    {
+      "id": "anamika-maam-03",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322031/Anamika_ma_am_reel_03_sstq5h.mp4",
+      "title": "Anamika Ma'am",
+      "client": "Reel 03"
+    },
+    {
+      "id": "pallavi-maam-12",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322030/Pallavi_ma_am_reel_12_gii8uc.mp4",
+      "title": "Pallavi Ma'am",
+      "client": "Reel 12"
+    },
+    {
+      "id": "krushang-sir-06",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773322027/Krushang_sir_reel_06_o7nqli.mp4",
+      "title": "Krushang Sir",
+      "client": "Reel 06"
+    },
+    {
+      "id": "shapna-mam-09",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773321983/shapna_mam_09_qsmag6.mp4",
+      "title": "Shapna Ma'am",
+      "client": "Reel 09"
+    },
+    {
+      "id": "deepti-maam-19",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773321967/Deepti_ma_am_reel_19_uefbft.mp4",
+      "title": "Deepti Ma'am",
+      "client": "Reel 19"
+    },
+    {
+      "id": "dr-sachin-kelenka",
+      "src": "https://res.cloudinary.com/dbmsm2kb3/video/upload/v1773321967/Dr_Sachin_Kelenka_wnig5t.mp4",
+      "title": "Dr. Sachin Kelenka",
+      "client": "Personal Branding"
+    }
+  ],
+  "app_config": {
+    "site_url": "https://visualeditstudio.com",
+    "contact_whatsapp": "918348166054"
+  }
+}

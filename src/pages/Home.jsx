@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
 import { siteData } from '../data';
-import VideoReel from '../components/VideoReel';
+import VideoCarousel from '../components/VideoCarousel';
 import SEO from '../components/SEO';
 import styles from './Home.module.css';
 
-const allVideos = [
-  ...siteData.divisions.ves_branding.video_categories,
-  ...siteData.divisions.ves_business.video_categories
-];
+const allVideos = siteData.home_videos;
 
 export default function Home() {
   return (
@@ -60,10 +57,11 @@ export default function Home() {
               <div className={styles.heroImageContainer}>
                 <div className={styles.imageGlow}></div>
                 <img
-                  src="/ceo.jpg"
-                  alt="VES CEO"
+                  src="/images/ceo.jpg"
+                  alt="Founder & CEO of VES"
                   className={styles.heroImage}
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
                 />
                 <div className={styles.imageRing}></div>
                 <div className={styles.imageBadge}>
@@ -137,12 +135,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video Reel */}
-      <VideoReel
-        items={allVideos}
-        title="CRAFTING DIGITAL LEGACIES"
-        label="/ MOTION ARCHIVE"
-      />
+      {/* Video Carousel */}
+      <div className={styles.sectionHeader}>
+        <span className={styles.sectionLabel}>/ MOTION ARCHIVE</span>
+        <h2 className={styles.sectionTitle}>CRAFTING DIGITAL LEGACIES</h2>
+        <div className={styles.sectionLine}></div>
+      </div>
+      <VideoCarousel videos={allVideos} />
 
       {/* Case Studies */}
       <section className={styles.cases}>

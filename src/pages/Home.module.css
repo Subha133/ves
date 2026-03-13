@@ -30,9 +30,7 @@
 .heroGrid {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
   background-size: 80px 80px;
   mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
   -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
@@ -47,7 +45,7 @@
   height: 60vh;
   background: radial-gradient(ellipse, rgba(8, 145, 178, 0.08) 0%, transparent 70%);
   border-radius: 50%;
-  filter: blur(60px);
+  filter: blur(40px); /* Optimized from 60px */
 }
 
 .heroGlow2 {
@@ -58,7 +56,7 @@
   height: 50vw;
   background: radial-gradient(ellipse, rgba(245, 203, 167, 0.15) 0%, transparent 60%);
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(40px); /* Optimized from 80px */
 }
 
 .ambientOrb1,
@@ -150,6 +148,7 @@
   position: relative;
   width: 320px;
   height: 400px;
+  padding-bottom: 24px; /* Fix badge overflow */
 }
 
 .heroImage {
@@ -173,13 +172,22 @@
   background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.5) 0%, transparent 70%);
   border-radius: 40px;
   filter: blur(45px);
-  z-index: 0;
+  z-index: -1; /* Move behind ring and image */
   animation: glowPulse 4s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.05); }
+
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
 }
 
 .imageRing {
@@ -188,7 +196,7 @@
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.8), rgba(245, 203, 167, 0.6));
   border-radius: 28px;
   padding: 3px;
-  z-index: 0;
+  z-index: 0; /* Frame behind the image */
 }
 
 .imageRing::before {
@@ -240,16 +248,16 @@
     gap: 3rem;
     text-align: center;
   }
-  
+
   .heroText {
     text-align: center;
   }
-  
+
   .heroImageWrapper {
     justify-content: center;
     width: 100%;
   }
-  
+
   .heroImageContainer {
     width: 280px;
     height: 350px;
@@ -261,21 +269,21 @@
   .hero {
     padding: 6rem 1rem 3rem;
   }
-  
+
   .heroContent {
     padding: 0 1rem;
   }
-  
+
   .heroImageContainer {
     width: 260px;
     height: 320px;
     margin: 0 auto;
   }
-  
+
   .heroTop {
     gap: 2rem;
   }
-  
+
   .heroText {
     text-align: center;
     min-width: auto;
@@ -337,7 +345,7 @@
   font-family: var(--font-display);
   font-size: clamp(4rem, 10vw, 8rem);
   letter-spacing: 0.05em;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.15); /* Optimized from 0.05 */
   line-height: 0.95;
   animation: slideInLeft 0.8s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
@@ -353,6 +361,11 @@
   position: relative;
   animation: slideInLeft 0.8s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
   text-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: letter-spacing 0.4s ease; /* Optimized */
+}
+
+.heroLine2:hover {
+  letter-spacing: 0.06em; /* Optimized luxury feel */
 }
 
 .heroLine3 {
@@ -371,7 +384,7 @@
   font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--gray);
   max-width: 600px;
-  margin: 0 auto 3rem;
+  margin-bottom: 3rem; /* Removed auto margin */
   line-height: 1.8;
   animation: fadeUp 0.8s 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
   font-weight: 400;
@@ -395,7 +408,7 @@
   color: var(--black);
   background: var(--teal-bright);
   padding: 1rem 2rem;
-  border-radius: 2px;
+  border-radius: 6px; /* Optimized from 2px */
   transition: all 0.2s;
   font-weight: 700;
 }
@@ -450,6 +463,17 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gray);
+}
+
+@media (max-width: 600px) {
+  .heroStats {
+    gap: 2rem; /* Optimized mobile spacing */
+    flex-wrap: wrap;
+  }
+
+  .statNum {
+    font-size: 2rem; /* Optimized mobile size */
+  }
 }
 
 .scrollHint {
@@ -989,58 +1013,58 @@
   .heroContent {
     padding: 0 1rem;
   }
-  
+
   .heroTop {
     gap: 2rem;
   }
-  
+
   .heroText {
     text-align: center;
     min-width: auto;
     width: 100%;
   }
-  
+
   .heroImageWrapper {
     justify-content: center;
     width: 100%;
   }
-  
+
   .heroImageContainer {
     width: 260px;
     height: 320px;
     margin: 0 auto;
   }
-  
+
   .heroHeading {
     font-size: 2.5rem;
   }
-  
+
   .heroSub {
     font-size: 1.125rem;
   }
-  
+
   .whatWeDoGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .serviceCard {
     padding: 1.5rem;
   }
-  
+
   .provenResults {
     padding: 3rem 0;
   }
-  
+
   .resultsGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .casesSection {
     padding: 3rem 0;
   }
-  
+
   .casesGrid {
     gap: 1rem;
   }
@@ -1050,24 +1074,24 @@
   .hero {
     padding: 6rem 0.75rem 2rem;
   }
-  
+
   .heroHeading {
     font-size: 2rem;
   }
-  
+
   .heroImageContainer {
     width: 220px;
     height: 270px;
   }
-  
+
   .serviceCard {
     padding: 1.25rem;
   }
-  
+
   .provenResults {
     padding: 2.5rem 0;
   }
-  
+
   .casesSection {
     padding: 2.5rem 0;
   }
@@ -1078,142 +1102,151 @@
   .heroContent {
     padding: 0 1rem;
   }
-  
+
   .heroTop {
     gap: 2rem;
   }
-  
+
   .heroText {
     text-align: center;
     min-width: auto;
     width: 100%;
   }
-  
+
   .heroImageWrapper {
     justify-content: center;
     width: 100%;
   }
-  
+
   .heroImageContainer {
     width: 260px;
     height: 320px;
     margin: 0 auto;
   }
-  
+
   .heroTag {
     font-size: 0.65rem;
     padding: 0.6rem 1.25rem;
   }
-  
+
   .heroHeading {
     font-size: 2.5rem;
     line-height: 1;
   }
-  
+
   .heroSub {
     font-size: 1.125rem;
     margin: 1.5rem 0;
   }
-  
+
   .heroCta {
     padding: 0.875rem 1.75rem;
     font-size: 0.875rem;
   }
-  
+
   .heroStats {
     gap: 2rem;
   }
-  
+
   .statItem {
     padding: 0.75rem 1.25rem;
   }
-  
+
   .statValue {
     font-size: 1.5rem;
   }
-  
+
   .statLabel {
     font-size: 0.75rem;
   }
-  
+
   .whatWeDoGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .serviceCard {
     padding: 1.5rem;
   }
-  
+
   .serviceIcon {
     width: 48px;
     height: 48px;
     padding: 12px;
   }
-  
+
   .serviceTitle {
     font-size: 1.25rem;
   }
-  
+
   .serviceDesc {
     font-size: 0.9375rem;
   }
-  
+
   .provenResults {
     padding: 3rem 0;
   }
-  
+
   .resultsGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .resultCard {
     padding: 1.5rem;
   }
-  
+
   .resultNumber {
     font-size: 2.5rem;
   }
-  
+
   .resultLabel {
     font-size: 1rem;
   }
-  
+
   .resultDesc {
     font-size: 0.9375rem;
   }
-  
+
   .testimonialQuote {
     font-size: 1.125rem;
     line-height: 1.6;
   }
-  
+
   .testimonialAuthor {
     font-size: 0.875rem;
   }
-  
+
+/* View Transitions */
+@supports (view-transition-name: none) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 0.25s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
   .casesSection {
     padding: 3rem 0;
   }
-  
+
   .casesGrid {
     gap: 1rem;
   }
-  
+
   .caseCard {
     padding: 1.5rem 1rem;
   }
-  
+
   .caseType {
     font-size: 0.75rem;
     padding: 0.25rem 0.75rem;
   }
-  
+
   .caseResult {
     font-size: 1.25rem;
   }
-  
+
   .caseDetail {
     font-size: 0.875rem;
   }
@@ -1223,77 +1256,108 @@
   .hero {
     padding: 6rem 0.75rem 2rem;
   }
-  
+
   .heroContent {
     padding: 0 0.75rem;
   }
-  
+
   .heroHeading {
     font-size: 2rem;
   }
-  
+
   .heroSub {
     font-size: 1rem;
     margin: 1.25rem 0;
   }
-  
+
   .heroCta {
     padding: 0.75rem 1.5rem;
     font-size: 0.8125rem;
   }
-  
+
   .heroImageContainer {
     width: 220px;
     height: 270px;
   }
-  
+
   .heroStats {
     gap: 1rem;
   }
-  
+
   .statItem {
     padding: 0.625rem 1rem;
   }
-  
+
   .statValue {
     font-size: 1.25rem;
   }
-  
+
   .whatWeDoSection {
     padding: 2.5rem 0;
   }
-  
+
   .serviceCard {
     padding: 1.25rem;
   }
-  
+
   .serviceIcon {
     width: 40px;
     height: 40px;
     padding: 10px;
   }
-  
+
   .provenResults {
     padding: 2.5rem 0;
   }
-  
+
   .resultCard {
     padding: 1.25rem;
   }
-  
+
   .resultNumber {
     font-size: 2rem;
   }
-  
+
   .casesSection {
     padding: 2.5rem 0;
   }
-  
+
   .caseCard {
     padding: 1.25rem 0.75rem;
   }
-  
+
   .caseResult {
     font-size: 1.125rem;
   }
+}
+
+/* VIDEO CAROUSEL SECTION */
+.sectionHeader {
+  max-width: 1280px;
+  margin: 6rem auto 3rem;
+  padding: 0 2rem;
+}
+
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  letter-spacing: 0.05em;
+  color: var(--white);
+}
+
+.sectionLine {
+  height: 2px;
+  background: linear-gradient(90deg, var(--teal-bright) 0%, transparent 100%);
+  width: 100px;
+  margin-top: 1rem;
 }

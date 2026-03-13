@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { siteData } from '../data';
-import ClientVideosSection from '../components/ClientVideosSection';
+import VideoCarousel from '../components/VideoCarousel';
 import DoctorsTestimonials from '../components/DoctorsTestimonials';
 import SEO from '../components/SEO';
 import ContactForm from '../components/ContactForm';
@@ -20,21 +20,20 @@ export default function BrandingPage() {
             <section className={styles.hero}>
                 <div className={styles.heroBg}>
                     <div className={styles.heroGrid}></div>
-                    <div className={styles.heroGlow}></div>
+                    <div className={styles.heroGlow1}></div>
+                    <div className={styles.heroGlow2}></div>
                     <div className={styles.ambientOrb1}></div>
+                    <div className={styles.ambientOrb2}></div>
                 </div>
                 <div className={styles.heroContent}>
                     <div className={styles.heroTop}>
                         <div className={styles.heroText}>
                             <div className={styles.breadcrumb}>
-                                <Link to="/" className={styles.breadLink}>Home</Link>
-                                <span>/</span>
                                 <span>VES Brand</span>
                             </div>
                             <span className={styles.heroTag}>{d.hero_label}</span>
                             <h1 className={styles.heroTitle}>{d.title.toUpperCase()}</h1>
-                            <p className={styles.heroSub}>{d.subtitle}</p>
-                            <div className={styles.heroDesc}>{d.description}</div>
+                            <p className={styles.heroSub}>{d.subtitle}. {d.description}</p>
 
                             <div className={styles.trustBar}>
                                 <span className={styles.trustNum}>{d.clients_count}</span>
@@ -52,7 +51,7 @@ export default function BrandingPage() {
                             <div className={styles.heroImageContainer}>
                                 <div className={styles.imageGlow}></div>
                                 <img
-                                    src="/ceo.jpg"
+                                    src="/images/ceo.jpg"
                                     alt="VES CEO"
                                     className={styles.heroImage}
                                     loading="lazy"
@@ -181,11 +180,22 @@ export default function BrandingPage() {
                 </div>
             </section>
 
-            {/* Client Videos Section */}
-            <ClientVideosSection
-                title="CRAFTING DIGITAL LEGACIES"
-                label="/ MOTION ARCHIVE"
-            />
+            {/* Branding Video Section */}
+            <section className={styles.videoCarouselSection} style={{ padding: '5rem 0', background: '#fdfdfd' }}>
+                <div className={styles.sectionInner}>
+                    <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                        <h2 style={{
+                            fontSize: 'clamp(2rem, 5vw, 2.5rem)',
+                            color: '#0d9488', // Teal color from screenshot
+                            fontFamily: 'var(--font-display, sans-serif)',
+                            fontWeight: '600'
+                        }}>
+                            Our Work
+                        </h2>
+                    </div>
+                </div>
+                <VideoCarousel />
+            </section>
 
             {/* Doctors Testimonials - Alternating Vertical Carousel */}
             <DoctorsTestimonials

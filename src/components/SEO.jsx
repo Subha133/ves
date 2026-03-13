@@ -1,8 +1,9 @@
 import { Helmet } from 'react-helmet-async';
+import siteData from '../data/site-data.json';
 
 export default function SEO({ title, description, path }) {
     const fullTitle = `${title} | Visual Edit Studio`;
-    const siteUrl = 'https://visualeditstudio.com'; // Replace with actual URL if known
+    const siteUrl = siteData.app_config.site_url;
     const fullUrl = `${siteUrl}${path || ''}`;
 
     return (

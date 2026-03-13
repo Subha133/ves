@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import siteData from '../data/site-data.json';
 import styles from './ContactForm.module.css';
 
 export default function ContactForm() {
@@ -18,7 +19,7 @@ export default function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const phoneNumber = "918348166054"; // WhatsApp number (India format)
+        const phoneNumber = siteData.app_config.contact_whatsapp; 
 
         const message = `
 📩 *New Inquiry – Visual Edit Studio*

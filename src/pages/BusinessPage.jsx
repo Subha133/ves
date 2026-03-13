@@ -21,8 +21,10 @@ export default function BusinessPage() {
       <section className={`${styles.hero} ${bizStyles.hero}`}>
         <div className={styles.heroBg}>
           <div className={styles.heroGrid}></div>
-          <div className={`${styles.heroGlow} ${bizStyles.heroGlow}`}></div>
+          <div className={styles.heroGlow1}></div>
+          <div className={styles.heroGlow2}></div>
           <div className={styles.ambientOrb1}></div>
+          <div className={styles.ambientOrb2}></div>
         </div>
         <div className={styles.heroContent}>
           <div className={styles.heroTop}>
@@ -34,8 +36,7 @@ export default function BusinessPage() {
               </div>
               <span className={styles.heroTag}>{d.hero_label}</span>
               <h1 className={styles.heroTitle}>{d.title.toUpperCase()}</h1>
-              <p className={styles.heroSub}>{d.subtitle}</p>
-              <div className={styles.heroDesc}>{d.description}</div>
+              <p className={styles.heroSub}>{d.subtitle}. {d.description}</p>
 
               <div className={styles.trustBar}>
                 <span className={styles.trustNum}>4x Avg. ROAS</span>
@@ -53,7 +54,7 @@ export default function BusinessPage() {
               <div className={styles.heroImageContainer}>
                 <div className={styles.imageGlow}></div>
                 <img
-                  src="/ceo.jpg"
+                  src="/images/ceo.jpg"
                   alt="VES CEO"
                   className={styles.heroImage}
                   loading="lazy"
@@ -123,12 +124,12 @@ export default function BusinessPage() {
         </div>
       </section>
 
-      {/* Video Reel */}
+      {/* Video Reel
       <VideoReel
         items={d.video_categories}
         title="CRAFTING DIGITAL LEGACIES"
         label="/ MOTION ARCHIVE"
-      />
+      /> */}
 
       {/* Detail Case Studies */}
       <section className={styles.services}>

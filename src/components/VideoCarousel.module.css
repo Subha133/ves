@@ -1,0 +1,167 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 4rem 0;
+  background: #fdfdfd; /* White background from screenshot */
+}
+
+.scrollContainer {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.card {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  border: 4px solid #fff; /* White border from screenshot */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.videoWrapper {
+  position: relative;
+  aspect-ratio: 16 / 9; /* Landscape from screenshot */
+  overflow: hidden;
+  background: #000;
+}
+
+.videoThumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.playButton {
+  width: 56px;
+  height: 56px;
+  background: #fbbf24; /* Yellow from screenshot */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .playButton {
+  transform: scale(1.1);
+}
+
+.playButton svg {
+  width: 24px;
+  height: 24px;
+  color: #000; /* Black icon from screenshot */
+  margin-left: 4px;
+}
+
+.info {
+  padding: 1.5rem;
+  background: linear-gradient(to right, rgba(0,0,0,0.6), transparent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 3;
+  width: 60%;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.client {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fbbf24; /* Yellow from screenshot */
+  margin: 0.25rem 0 0;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 800px;
+  background: #000;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modalVideoWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.modalVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

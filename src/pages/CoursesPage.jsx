@@ -22,8 +22,10 @@ export default function CoursesPage() {
             <section className={styles.hero}>
                 <div className={styles.heroBg}>
                     <div className={styles.heroGrid}></div>
-                    <div className={styles.heroGlow}></div>
+                    <div className={styles.heroGlow1}></div>
+                    <div className={styles.heroGlow2}></div>
                     <div className={styles.ambientOrb1}></div>
+                    <div className={styles.ambientOrb2}></div>
                 </div>
                 <div className={styles.heroContent}>
                     <span className={styles.heroTag}>/ VES ACADEMY</span>
