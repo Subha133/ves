@@ -419,10 +419,11 @@
 .sectionLabel {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--teal-bright);
+  color: #000000;
+  font-weight: 700;
   margin-bottom: 0.75rem;
 }
 
@@ -628,10 +629,11 @@
   align-items: center;
   gap: 0.6rem;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--teal-bright);
+  color: #000000;
+  font-weight: 700;
   background: rgba(8, 145, 178, 0.08);
   border: 1px solid rgba(8, 145, 178, 0.25);
   padding: 0.5rem 1.2rem;

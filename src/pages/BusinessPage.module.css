@@ -74,10 +74,11 @@
 
 .caseTag {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: #000000;
+  font-weight: 700;
 }
 
 .caseResult {
@@ -117,10 +118,11 @@
 
 .caseTag {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: #000000;
+  font-weight: 700;
 }
 
 .caseResult {

@@ -539,10 +539,11 @@
 
 .divLabel {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--teal-bright);
+  color: #000000;
+  font-weight: 700;
   display: block;
   margin-bottom: 0.75rem;
 }
@@ -704,10 +705,11 @@
 
 .casesLabel {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--teal-bright);
+  color: #000000;
+  font-weight: 700;
   display: block;
   margin-bottom: 1rem;
 }
@@ -817,10 +819,11 @@
 
 .testLabel {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--teal-bright);
+  color: #000000;
+  font-weight: 700;
   display: block;
   margin-bottom: 1rem;
 }
@@ -941,10 +944,11 @@
 
 .ctaBannerLabel {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--teal-bright);
+  color: #000000;
+  font-weight: 700;
   display: block;
   margin-bottom: 1.5rem;
 }
@@ -1340,10 +1344,11 @@
 
 .sectionLabel {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--teal-bright);
+  color: #000000;
+  font-weight: 700;
   display: block;
   margin-bottom: 0.75rem;
 }
