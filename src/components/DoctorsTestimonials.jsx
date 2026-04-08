@@ -8,6 +8,7 @@ const TESTIMONIAL_IMAGES = siteData.gallery_images;
 
 function ImageCard({ src, onClick }) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   return (
     <motion.div
@@ -18,13 +19,21 @@ function ImageCard({ src, onClick }) {
     >
       <div className={styles.imageFrame}>
         {!isLoaded && <ShimmerCard className={styles.shimmerOverlay} />}
-        <img
-          src={src}
-          alt="Doctor Testimonial"
-          className={`${styles.image} ${isLoaded ? styles.imageLoaded : styles.imageLoading}`}
-          loading="lazy"
-          onLoad={() => setIsLoaded(true)}
-        />
+        {!hasError ? (
+          <img
+            src={src}
+            alt="Doctor Testimonial"
+            className={`${styles.image} ${isLoaded ? styles.imageLoaded : styles.imageLoading}`}
+            loading="eager"
+            onLoad={() => setIsLoaded(true)}
+            onError={() => {
+              setHasError(true);
+              setIsLoaded(true);
+            }}
+          />
+        ) : (
+          <div className={styles.imageFallback}>Testimonial</div>
+        )}
       </div>
     </motion.div>
   );
@@ -33,10 +42,9 @@ function ImageCard({ src, onClick }) {
 export default function DoctorsTestimonials({ title, label }) {
   const [selected, setSelected] = useState(null);
 
-  // Split images into two rows
-  const half = Math.ceil(TESTIMONIAL_IMAGES.length / 2);
-  const row1 = TESTIMONIAL_IMAGES.slice(0, half);
-  const row2 = TESTIMONIAL_IMAGES.slice(half);
+  // Split with odd/even distribution so both rows get a balanced mix.
+  const row1 = TESTIMONIAL_IMAGES.filter((_, i) => i % 2 === 0);
+  const row2 = TESTIMONIAL_IMAGES.filter((_, i) => i % 2 === 1);
 
   // Duplicate for seamless loop
   const duplicatedRow1 = [...row1, ...row1];
