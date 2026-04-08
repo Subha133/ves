@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { siteData } from '../data';
 import VideoCarousel from '../components/VideoCarousel';
@@ -5,8 +6,26 @@ import SEO from '../components/SEO';
 import styles from './Home.module.css';
 
 const allVideos = siteData.home_videos;
+const ceoImages = ['https://res.cloudinary.com/dzr5dorsx/image/upload/q_auto/f_auto/v1775212341/_DSC5278.jpg_kybfkd.jpg', 'https://res.cloudinary.com/dzr5dorsx/image/upload/q_auto/f_auto/v1775212340/_DSC5279.jpg_1_zrrdgy.jpg', 'https://res.cloudinary.com/dzr5dorsx/image/upload/q_auto/f_auto/v1775212337/_DSC5297.jpg_ett6t5.jpg'];
 
 export default function Home() {
+  const [activeCeoIndex, setActiveCeoIndex] = useState(0);
+
+  useEffect(() => {
+    const firstChangeTimeout = setTimeout(() => {
+      setActiveCeoIndex((prev) => (prev + 1) % ceoImages.length);
+    }, 2000);
+
+    const intervalId = setInterval(() => {
+      setActiveCeoIndex((prev) => (prev + 1) % ceoImages.length);
+    }, 8000);
+
+    return () => {
+      clearTimeout(firstChangeTimeout);
+      clearInterval(intervalId);
+    };
+  }, []);
+
   return (
     <div className={styles.page}>
       <SEO
@@ -56,13 +75,22 @@ export default function Home() {
             <div className={styles.heroImageWrapper}>
               <div className={styles.heroImageContainer}>
                 <div className={styles.imageGlow}></div>
-                <img
-                  src="/images/ceo.jpg"
-                  alt="Founder & CEO of VES"
-                  className={styles.heroImage}
-                  loading="eager"
-                  fetchPriority="high"
-                />
+                <div className={styles.heroImageCarousel}>
+                  {ceoImages.map((image, index) => (
+                    <img
+                      key={image}
+                      src={image}
+                      alt={`Founder & CEO of VES ${index + 1}`}
+                      className={`${styles.heroImage} ${styles.heroImageSlide} ${index === activeCeoIndex ? styles.heroImageActive : ''}`}
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                      fetchPriority={index === 0 ? 'high' : 'auto'}
+                      onError={(event) => {
+                        event.currentTarget.onerror = null;
+                        event.currentTarget.src = '/images/ceo.jpg';
+                      }}
+                    />
+                  ))}
+                </div>
                 <div className={styles.imageRing}></div>
                 <div className={styles.imageBadge}>
                   <span className={styles.imageBadgeDot}></span>
@@ -197,6 +225,12 @@ export default function Home() {
         <div className={styles.ctaBannerContent}>
           <span className={styles.ctaBannerLabel}>/ READY TO START?</span>
           <h2 className={styles.ctaBannerTitle}>TRANSFORM YOUR BRAND<br />INTO A GROWTH ENGINE</h2>
+          <img
+            src="https://res.cloudinary.com/dzr5dorsx/image/upload/q_auto/f_auto/v1775212337/_DSC5274.jpg_hxn1vt.jpg"
+            alt="VES growth showcase"
+            className={styles.ctaCenterImage}
+            loading="lazy"
+          />
           <p className={styles.ctaBannerSub}>Join 750+ professionals who trust VES to build their digital authority.</p>
           <div className={styles.ctaBannerBtns}>
             <Link to="/branding" className={styles.ctaPrimary}>For Professionals</Link>
