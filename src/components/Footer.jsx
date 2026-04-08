@@ -16,31 +16,35 @@ export default function Footer() {
 
           <div className={styles.links}>
             <p className={styles.colTitle}>Quick Links</p>
-            {siteData.navigation.links.map(l => (
-              <Link key={l.label} to={l.href} className={styles.link}>{l.label}</Link>
+            {siteData.navigation.links.map((l) => (
+              l.href.startsWith('#') ? (
+                <a key={l.label} href={l.href} className={styles.link}>{l.label}</a>
+              ) : (
+                <Link key={l.label} to={l.href} className={styles.link}>{l.label}</Link>
+              )
             ))}
           </div>
 
           <div className={styles.contact}>
             <p className={styles.colTitle}>Connect</p>
             <a href={`mailto:${siteData.company.contact.email}`} className={styles.contactItem}>
-              <span className={styles.contactIcon}>✉</span>
+              <span className={styles.contactIcon}>@</span>
               {siteData.company.contact.email}
             </a>
             <a href={`tel:${siteData.company.contact.phone}`} className={styles.contactItem}>
-              <span className={styles.contactIcon}>✆</span>
+              <span className={styles.contactIcon}>Tel</span>
               {siteData.company.contact.phone}
             </a>
             <p className={styles.contactItem}>
-              <span className={styles.contactIcon}>◎</span>
+              <span className={styles.contactIcon}>Loc</span>
               {siteData.company.contact.address}
             </p>
           </div>
 
           <div className={styles.cta}>
             <p className={styles.colTitle}>Ready to Scale?</p>
-            <a 
-              href={`https://wa.me/${siteData.company.contact.phone.replace(/\s/g, '')}`}
+            <a
+              href={`https://wa.me/${siteData.company.contact.phone.replace(/\D/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.whatsappBtn}
@@ -52,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p className={styles.copy}>© 2026 Visual Edit Studio. All rights reserved.</p>
+          <p className={styles.copy}>(c) 2026 Visual Edit Studio. All rights reserved.</p>
           <div className={styles.policies}>
             <a href="#" className={styles.policyLink}>Privacy Policy</a>
             <a href="#" className={styles.policyLink}>Terms of Service</a>

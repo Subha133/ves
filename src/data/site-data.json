@@ -66,23 +66,28 @@
       "services": [
         {
           "title": "Content Strategy",
-          "desc": "Customized monthly content plans that resonate with your audience."
+          "desc": "Customized monthly content plans that resonate with your audience.",
+          "icon": "&#128221;"
         },
         {
           "title": "Scriptwriting",
-          "desc": "Professional scripts crafted to communicate authority and trust."
+          "desc": "Professional scripts crafted to communicate authority and trust.",
+          "icon": "&#9997;"
         },
         {
           "title": "Reels Editing",
-          "desc": "High-quality short-form video editing that drives engagement."
+          "desc": "High-quality short-form video editing that drives engagement.",
+          "icon": "&#127909;"
         },
         {
           "title": "SEO Captions",
-          "desc": "Optimized captions that boost discoverability across platforms."
+          "desc": "Optimized captions that boost discoverability across platforms.",
+          "icon": "&#128269;"
         },
         {
           "title": "Medical Compliance",
-          "desc": "Ethical and compliant branding tailored for healthcare professionals."
+          "desc": "Ethical and compliant branding tailored for healthcare professionals.",
+          "icon": "&#9878;"
         }
       ],
       "videos": [
@@ -240,23 +245,28 @@
       "services": [
         {
           "title": "Meta Ads",
-          "desc": "High-converting Facebook and Instagram ad campaigns that drive real revenue."
+          "desc": "High-converting Facebook and Instagram ad campaigns that drive real revenue.",
+          "icon": "&#128640;"
         },
         {
           "title": "Google Ads",
-          "desc": "Search and display campaigns that capture intent and convert at scale."
+          "desc": "Search and display campaigns that capture intent and convert at scale.",
+          "icon": "&#128269;"
         },
         {
           "title": "Ad Film Production",
-          "desc": "Cinematic ad videos that stop the scroll and demand attention."
+          "desc": "Cinematic ad videos that stop the scroll and demand attention.",
+          "icon": "&#127916;"
         },
         {
           "title": "Funnel Strategy",
-          "desc": "End-to-end funnel systems engineered for maximum conversion."
+          "desc": "End-to-end funnel systems engineered for maximum conversion.",
+          "icon": "&#128200;"
         },
         {
           "title": "Brand Campaigns",
-          "desc": "Full rebrand and awareness campaigns that transform market positioning."
+          "desc": "Full rebrand and awareness campaigns that transform market positioning.",
+          "icon": "&#127919;"
         }
       ],
       "video_categories": [
@@ -781,4 +791,3 @@
     "contact_whatsapp": "917044232016"
   }
 }
-

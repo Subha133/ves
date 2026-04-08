@@ -56,7 +56,7 @@ export default function Navbar() {
             ))}
           </ul>
           <a 
-            href={`https://wa.me/${siteData.company.contact.phone.replace(/\s/g, '')}`}
+            href={`https://wa.me/${siteData.company.contact.phone.replace(/\D/g, '')}`}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaBtn}

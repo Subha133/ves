@@ -67,7 +67,7 @@ export default function Home() {
                   For Doctors & Coaches
                 </Link>
                 <Link to="/business" className={styles.ctaSecondary}>
-                  For Businesses →
+                  For Businesses -&gt;
                 </Link>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className={styles.divCta}>Explore VES Brand →</span>
+              <span className={styles.divCta}>Explore VES Brand -&gt;</span>
             </div>
           </Link>
 
@@ -157,7 +157,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className={styles.divCta}>Explore VES Business →</span>
+              <span className={styles.divCta}>Explore VES Business -&gt;</span>
             </div>
           </Link>
         </div>
@@ -234,7 +234,7 @@ export default function Home() {
           <p className={styles.ctaBannerSub}>Join 750+ professionals who trust VES to build their digital authority.</p>
           <div className={styles.ctaBannerBtns}>
             <Link to="/branding" className={styles.ctaPrimary}>For Professionals</Link>
-            <Link to="/business" className={styles.ctaSecondary}>For Business →</Link>
+            <Link to="/business" className={styles.ctaSecondary}>For Business -&gt;</Link>
           </div>
         </div>
       </section>

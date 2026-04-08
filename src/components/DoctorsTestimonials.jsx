@@ -24,7 +24,7 @@ function ImageCard({ src, onClick }) {
             src={src}
             alt="Doctor Testimonial"
             className={`${styles.image} ${isLoaded ? styles.imageLoaded : styles.imageLoading}`}
-            loading="eager"
+            loading="lazy"
             onLoad={() => setIsLoaded(true)}
             onError={() => {
               setHasError(true);

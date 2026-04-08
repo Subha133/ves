@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { siteData } from '../data';
-import VideoReel from '../components/VideoReel';
 import SEO from '../components/SEO';
 import ContactForm from '../components/ContactForm';
 import ComparisonCard from '../components/ComparisonCard';
@@ -46,7 +45,7 @@ export default function BusinessPage() {
 
               <div className={styles.heroCtas}>
                 <a href="#contact" className={styles.ctaPrimary}>Scale Your Business</a>
-                <a href="#services" className={styles.ctaSecondary}>Our Services ↓</a>
+                <a href="#services" className={styles.ctaSecondary}>Our Services -&gt;</a>
               </div>
             </div>
 
@@ -199,10 +198,10 @@ export default function BusinessPage() {
 
           <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '3rem', opacity: 0.7 }}>
             <a href={`tel:${siteData.company.contact.phone}`} style={{ color: 'var(--gray)', fontSize: '0.85rem' }}>
-              ☏ {siteData.company.contact.phone}
+              Phone: {siteData.company.contact.phone}
             </a>
             <a href={`mailto:${siteData.company.contact.email}`} style={{ color: 'var(--gray)', fontSize: '0.85rem' }}>
-              ✉ {siteData.company.contact.email}
+              Email: {siteData.company.contact.email}
             </a>
           </div>
         </div>

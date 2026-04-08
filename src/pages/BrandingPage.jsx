@@ -43,7 +43,7 @@ export default function BrandingPage() {
 
                             <div className={styles.heroCtas}>
                                 <a href="#contact" className={styles.ctaPrimary}>Start Your Journey</a>
-                                <a href="#services" className={styles.ctaSecondary}>Our Services ↓</a>
+                                <a href="#services" className={styles.ctaSecondary}>Our Services -&gt;</a>
                             </div>
                         </div>
 
@@ -213,7 +213,7 @@ export default function BrandingPage() {
                             <p className={styles.whyDesc}>
                                 While you're saving lives, we're building your brand. Our team handles every aspect of your digital presence — from content strategy to video production — so your expertise reaches the people who need it most.
                             </p>
-                            <Link to="/" className={styles.ctaSecondary}>View All Services →</Link>
+                            <Link to="/" className={styles.ctaSecondary}>View All Services -&gt;</Link>
                         </div>
                         <div className={styles.whyRight}>
                             <div className={styles.whyStats}>
@@ -279,10 +279,10 @@ export default function BrandingPage() {
 
                     <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '3rem', opacity: 0.7 }}>
                         <a href={`tel:${siteData.company.contact.phone}`} style={{ color: 'var(--gray)', fontSize: '0.85rem' }}>
-                            ☏ {siteData.company.contact.phone}
+                            Phone: {siteData.company.contact.phone}
                         </a>
                         <a href={`mailto:${siteData.company.contact.email}`} style={{ color: 'var(--gray)', fontSize: '0.85rem' }}>
-                            ✉ {siteData.company.contact.email}
+                            Email: {siteData.company.contact.email}
                         </a>
                     </div>
                 </div>
